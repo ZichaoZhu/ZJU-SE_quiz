@@ -66,6 +66,32 @@
   .btn-ai:hover { opacity: .9; }
   .btn-ai:disabled { background: #9ca3af; cursor: wait; }
 
+  /* User profile card */
+  .user-card {
+    display: flex; align-items: center; gap: 12px;
+    background: var(--card-bg); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 14px 16px; margin-bottom: 18px;
+  }
+  .user-avatar {
+    width: 44px; height: 44px; border-radius: 50%; flex-shrink: 0;
+    background: linear-gradient(135deg,#7c3aed,#4f46e5); color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem; font-weight: 700;
+  }
+  .user-meta { flex: 1; min-width: 0; }
+  .user-name-row { display: flex; align-items: center; gap: 6px; }
+  .user-name { font-weight: 700; font-size: 1rem; color: var(--text); }
+  .user-edit { background: none; border: none; cursor: pointer; color: var(--text-secondary); font-size: .9rem; padding: 0 2px; line-height: 1; }
+  .user-edit:hover { color: var(--primary); }
+  .user-stats { font-size: .82rem; color: var(--text-secondary); margin-top: 3px; }
+  .user-id { font-size: .72rem; color: var(--text-secondary); opacity: .7; margin-top: 1px; }
+  .user-actions { display: flex; flex-direction: column; gap: 6px; flex-shrink: 0; }
+
+  /* Question navigation row */
+  .nav-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 10px; }
+  .nav-row .nav-mid { font-size: .82rem; color: var(--text-secondary); }
+  .nav-row .btn:disabled { opacity: .4; cursor: not-allowed; }
+
   /* AI Analysis + Q&A */
   .ai-panel {
     margin-top: 12px; border-radius: 10px; overflow: hidden;
@@ -276,6 +302,24 @@
   <div class="setup-panel" id="setupPanel">
     <h1>软件工程刷题</h1>
     <p class="subtitle">ZJU Software Engineering — Multiple Choice</p>
+
+    <div class="user-card" id="userCard">
+      <div class="user-avatar" id="userAvatar">U</div>
+      <div class="user-meta">
+        <div class="user-name-row">
+          <span class="user-name" id="userName">同学</span>
+          <button class="user-edit" onclick="editNickname()" title="修改昵称">✎</button>
+        </div>
+        <div class="user-stats" id="userStats"></div>
+        <div class="user-id" id="userIdLabel"></div>
+      </div>
+      <div class="user-actions">
+        <button class="btn btn-outline btn-sm" onclick="exportProfile()" title="把昵称、AI 配置、错题与收藏打包导出">导出数据</button>
+        <button class="btn btn-outline btn-sm" onclick="document.getElementById('profileImport').click()" title="在另一台设备导入即可恢复同一账号">导入数据</button>
+        <input type="file" id="profileImport" accept=".json" style="display:none" onchange="importProfile(event)">
+      </div>
+    </div>
+
     <div class="file-zone" id="fileZone" onclick="document.getElementById('fileInput').click()">
       <div class="icon" id="fileIcon">📂</div>
       <div id="fileHint">点击选择 tiku.json</div>
@@ -360,8 +404,12 @@
         </div>
         <div class="btn-row" id="btnRow">
           <button class="btn btn-primary" id="submitBtn" onclick="submitAnswer()" disabled>提交答案</button>
-          <button class="btn btn-primary hidden" id="nextBtn" onclick="nextQuestion()">下一题 →</button>
           <button class="btn btn-outline hidden" id="returnListBtn" onclick="returnToList()">返回列表</button>
+        </div>
+        <div class="nav-row" id="navRow">
+          <button class="btn btn-outline btn-sm" id="prevBtn" onclick="prevQuestion()">← 上一题</button>
+          <span class="nav-mid" id="navMid"></span>
+          <button class="btn btn-outline btn-sm" id="navNextBtn" onclick="nextQuestion()">下一题 →</button>
         </div>
       </div>
     </div>
@@ -440,6 +488,114 @@ function savePersisted(key, data) {
 }
 function removePersisted(key) {
   localStorage.removeItem(key);
+}
+
+// ===== Device-based user identity (same device = same user) =====
+const STORAGE_KEY_DEVICE = 'se_quiz_device_id';
+const STORAGE_KEY_USER = 'se_quiz_user';
+
+function genDeviceId() {
+  try { if (window.crypto && crypto.randomUUID) return crypto.randomUUID(); } catch (_) {}
+  return 'dev-' + Math.random().toString(36).slice(2, 10) + '-' + Date.now().toString(36);
+}
+function getDeviceId() {
+  let id = loadPersisted(STORAGE_KEY_DEVICE, '');
+  if (!id || typeof id !== 'string') { id = genDeviceId(); savePersisted(STORAGE_KEY_DEVICE, id); }
+  return id;
+}
+function getUser() {
+  const raw = loadPersisted(STORAGE_KEY_USER, null);
+  const user = (raw && typeof raw === 'object') ? raw : {};
+  if (!user.nickname) user.nickname = '同学';
+  if (!user.createdAt) user.createdAt = new Date().toISOString();
+  if (!user.stats || typeof user.stats !== 'object') user.stats = { answered: 0, correct: 0 };
+  return user;
+}
+function saveUser(u) { savePersisted(STORAGE_KEY_USER, u); }
+
+function recordAnswerStat(isCorrect) {
+  const u = getUser();
+  u.stats.answered = (u.stats.answered || 0) + 1;
+  if (isCorrect) u.stats.correct = (u.stats.correct || 0) + 1;
+  saveUser(u);
+  renderUserCard();
+}
+
+function renderUserCard() {
+  const u = getUser();
+  const nm = u.nickname || '同学';
+  const av = document.getElementById('userAvatar');
+  if (av) av.textContent = (Array.from(nm.trim())[0] || 'U').toUpperCase();
+  const nameEl = document.getElementById('userName');
+  if (nameEl) nameEl.textContent = nm;
+  const a = u.stats.answered || 0, c = u.stats.correct || 0;
+  const acc = a > 0 ? Math.round(c / a * 100) + '%' : '—';
+  const statsEl = document.getElementById('userStats');
+  if (statsEl) statsEl.textContent = '累计答题 ' + a + ' · 正确率 ' + acc + ' · 错题 ' + wrongHistory.length + ' · 收藏 ' + bookmarks.length;
+  const idEl = document.getElementById('userIdLabel');
+  if (idEl) idEl.textContent = '设备 ID：' + getDeviceId().slice(-8);
+}
+
+function editNickname() {
+  const u = getUser();
+  const name = prompt('设置你的昵称（同一设备的数据都归在这个名字下）：', u.nickname);
+  if (name === null) return;
+  u.nickname = Array.from(name.trim()).slice(0, 20).join('') || '同学';
+  saveUser(u);
+  renderUserCard();
+}
+
+function exportProfile() {
+  const bundle = {
+    _type: 'se-quiz-profile', version: 1,
+    deviceId: getDeviceId(),
+    user: getUser(),
+    ai: loadPersisted(STORAGE_KEY_AI, {}),
+    wrong: wrongHistory,
+    bookmarks: bookmarks,
+    settings: loadPersisted(STORAGE_KEY_SETTINGS, {}),
+    exportedAt: new Date().toISOString()
+  };
+  downloadJSON(bundle, '我的刷题数据');
+}
+
+function importProfile(event) {
+  const file = event.target.files && event.target.files[0];
+  event.target.value = '';
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = e => {
+    let b;
+    try { b = JSON.parse(e.target.result); }
+    catch (_) { alert('导入失败：文件不是有效的 JSON'); return; }
+    const looksValid = b && b._type === 'se-quiz-profile';
+    const msg = looksValid
+      ? '导入将用该文件整体覆盖本机当前的昵称、统计、AI 配置、错题与收藏，确定吗？'
+      : '该文件可能不是导出的用户数据，仍要导入并覆盖本机对应数据吗？';
+    if (!confirm(msg)) return;
+    try {
+      if (looksValid) {
+        // full snapshot: apply every field (missing ones reset to empty) so the account is a faithful copy
+        if (typeof b.deviceId === 'string') savePersisted(STORAGE_KEY_DEVICE, b.deviceId);
+        savePersisted(STORAGE_KEY_USER, (b.user && typeof b.user === 'object') ? b.user : getUser());
+        savePersisted(STORAGE_KEY_AI, (b.ai && typeof b.ai === 'object') ? b.ai : {});
+        savePersisted(STORAGE_KEY_WRONG, Array.isArray(b.wrong) ? b.wrong : []);
+        savePersisted(STORAGE_KEY_BOOKMARK, Array.isArray(b.bookmarks) ? b.bookmarks : []);
+        savePersisted(STORAGE_KEY_SETTINGS, (b.settings && typeof b.settings === 'object') ? b.settings : {});
+      } else {
+        // unknown file: only overwrite the fields that are present, leave the rest intact
+        if (typeof b.deviceId === 'string') savePersisted(STORAGE_KEY_DEVICE, b.deviceId);
+        if (b.user && typeof b.user === 'object') savePersisted(STORAGE_KEY_USER, b.user);
+        if (b.ai && typeof b.ai === 'object') savePersisted(STORAGE_KEY_AI, b.ai);
+        if (Array.isArray(b.wrong)) savePersisted(STORAGE_KEY_WRONG, b.wrong);
+        if (Array.isArray(b.bookmarks)) savePersisted(STORAGE_KEY_BOOKMARK, b.bookmarks);
+        if (b.settings && typeof b.settings === 'object') savePersisted(STORAGE_KEY_SETTINGS, b.settings);
+      }
+      alert('导入成功，页面将刷新以应用数据。');
+      location.reload();
+    } catch (err) { alert('导入失败：' + (err && err.message || err)); }
+  };
+  reader.readAsText(file);
 }
 
 function normalizeAnswer(answer) {
@@ -749,12 +905,23 @@ function renderQuestion() {
   fb.className = 'answer-feedback';
   fb.textContent = '';
   document.getElementById('submitBtn').classList.remove('hidden');
-  document.getElementById('nextBtn').classList.add('hidden');
   document.getElementById('returnListBtn').classList.add('hidden');
   document.getElementById('submitBtn').disabled = true;
   document.getElementById('aiPanel').classList.remove('show');
   document.getElementById('aiBody').textContent = '';
   resetAIConversation();
+
+  // Prev/next browse navigation (hidden in single-question review mode)
+  const navRow = document.getElementById('navRow');
+  if (reviewContext) {
+    navRow.style.display = 'none';
+  } else {
+    navRow.style.display = 'flex';
+    document.getElementById('prevBtn').disabled = currentIdx === 0;
+    const isLast = currentIdx >= questions.length - 1;
+    document.getElementById('navNextBtn').textContent = isLast ? '完成 →' : '下一题 →';
+    document.getElementById('navMid').textContent = (currentIdx + 1) + ' / ' + questions.length;
+  }
 
   if (reviewContext) {
     selectedOptions = answerToIndexes(reviewContext.userAnswer || '');
@@ -840,7 +1007,6 @@ function revealQuestionResult(q, userAnswer, mode = 'answered') {
       fb.textContent = '正确答案：' + correctAnswer;
     }
     document.getElementById('submitBtn').classList.add('hidden');
-    document.getElementById('nextBtn').classList.add('hidden');
     showStoredAnalysis(q);
     return;
   }
@@ -849,7 +1015,6 @@ function revealQuestionResult(q, userAnswer, mode = 'answered') {
   fb.className = 'answer-feedback ' + (isCorrect ? 'correct' : 'wrong') + ' show';
   fb.textContent = isCorrect ? '✅ 正确！' : '❌ 你的答案：' + normalizedUser + '   正确答案：' + correctAnswer;
   document.getElementById('submitBtn').classList.add('hidden');
-  document.getElementById('nextBtn').classList.remove('hidden');
   showStoredAnalysis(q);
 }
 
@@ -1249,6 +1414,7 @@ function submitAnswer() {
   const isCorrect = userAnswer === correctAnswer;
 
   revealQuestionResult(q, userAnswer, 'answered');
+  recordAnswerStat(isCorrect);   // lifetime user stats (device = user)
   sessionAnswers[makeKey(q)] = { userAnswer, isCorrect, answeredAt: new Date().toISOString() };
   delete sessionSelections[makeKey(q)];
 
@@ -1284,12 +1450,25 @@ function upsertWrongItem(item) {
 // ===== Next Question =====
 function nextQuestion() {
   if (reviewContext) { returnToList(); return; }
-  currentIdx++;
-  if (currentIdx >= questions.length) { showReport(); }
-  else {
-    renderQuestion();
-    saveSessionState();
+  if (currentIdx >= questions.length - 1) {
+    // at the last question: finishing — guard against ending while questions remain unanswered
+    const unanswered = questions.length - Object.keys(sessionAnswers).length;
+    if (unanswered > 0 && !confirm('还有 ' + unanswered + ' 题未作答，确定结束本轮并查看成绩吗？')) return;
+    currentIdx = questions.length;
+    showReport();
+    return;
   }
+  currentIdx++;
+  renderQuestion();
+  saveSessionState();
+}
+
+function prevQuestion() {
+  if (reviewContext) return;
+  if (currentIdx <= 0) return;
+  currentIdx--;
+  renderQuestion();
+  saveSessionState();
 }
 
 // ===== Tab Switching =====
@@ -1303,6 +1482,8 @@ function switchTab(tab) {
 
   if (tab === 'wrongs') renderWrongList();
   if (tab === 'bookmarks') renderBookmarkList();
+  // re-render the quiz so the nav row / question reflect the live (non-review) state
+  if (tab === 'quiz' && !reviewContext && questions.length && questions[currentIdx]) renderQuestion();
   if (!reviewContext) saveSessionState();
 }
 
@@ -1508,9 +1689,16 @@ function handleHeaderAction() {
 
 // ===== Keyboard =====
 document.addEventListener('keydown', function(e) {
+  // ignore shortcuts while typing in a field (e.g. the AI question box)
+  const tag = (e.target && e.target.tagName || '').toLowerCase();
+  if (tag === 'input' || tag === 'textarea' || tag === 'select' || (e.target && e.target.isContentEditable)) return;
   if (currentTab !== 'quiz') return;
   const quizVisible = document.getElementById('quizPanel').style.display !== 'none';
   if (!quizVisible) return;
+
+  // arrow keys browse between questions (ArrowRight mirrors the 下一题/完成 button)
+  if (!reviewContext && e.key === 'ArrowLeft') { e.preventDefault(); prevQuestion(); return; }
+  if (!reviewContext && e.key === 'ArrowRight') { e.preventDefault(); nextQuestion(); return; }
 
   if (!answered && /^[1-5]$/.test(e.key)) {
     const idx = Number(e.key) - 1;
@@ -1600,6 +1788,7 @@ function restart() {
   document.getElementById('setupPanel').style.display = '';
   document.getElementById('mainContent').style.display = 'none';
   document.getElementById('reportPanel').style.display = 'none';
+  renderUserCard();
 }
 
 // ===== Session Persistence =====
@@ -1666,6 +1855,9 @@ function escapeHtml(s) {
 
 // Init
 function init() {
+  getDeviceId();      // ensure a stable device-user id exists
+  if (!localStorage.getItem(STORAGE_KEY_USER)) saveUser(getUser());   // persist defaults (stable createdAt/stats)
+  renderUserCard();
   updateBadges();
   updateChapterUI(false);
   if (wrongHistory.length > 0 || bookmarks.length > 0) {
