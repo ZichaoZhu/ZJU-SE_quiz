@@ -419,6 +419,7 @@
       <div class="list-header">
         <strong>📋 错题本</strong>
         <div>
+          <button class="btn btn-primary btn-sm" onclick="retryWrongQuestions()">🔁 重做错题</button>
           <button class="btn btn-danger btn-sm" onclick="clearWrongList()">清空</button>
           <button class="btn btn-outline btn-sm" onclick="exportWrong()">📥 导出</button>
         </div>
@@ -431,6 +432,7 @@
       <div class="list-header">
         <strong>⭐ 收藏夹</strong>
         <div>
+          <button class="btn btn-primary btn-sm" onclick="retryBookmarkQuestions()">🔁 重做收藏</button>
           <button class="btn btn-danger btn-sm" onclick="clearBookmarks()">清空</button>
           <button class="btn btn-outline btn-sm" onclick="exportBookmarks()">📥 导出</button>
         </div>
@@ -696,6 +698,7 @@ let currentTab = 'quiz';
 let reviewContext = null;
 let reviewReturnState = null;
 let sessionRestored = false;
+let retrySession = false;   // true while re-practising the wrong-question set
 
 // ===== File Handling =====
 function handleFile(e) {
@@ -848,6 +851,7 @@ function startQuiz() {
   totalAnswered = 0;
   reviewContext = null;
   reviewReturnState = null;
+  retrySession = false;
   saveSettings();
 
   document.getElementById('setupPanel').style.display = 'none';
@@ -1426,6 +1430,8 @@ function submitAnswer() {
     });
     sessionIncorrect.push(errItem);
     upsertWrongItem(errItem);
+  } else if (retrySession) {
+    removeWrongByTopic(q.topic);   // answered correctly while re-practising -> drop from 错题本
   }
 
   document.getElementById('progressFill').style.width = ((currentIdx + 1) / questions.length * 100) + '%';
@@ -1547,6 +1553,79 @@ function clearWrongList() {
   savePersisted(STORAGE_KEY_WRONG, wrongHistory);
   updateBadges();
   renderWrongList();
+}
+
+// Find the current bank version of a question by its topic (preferred: corrected answer + 详解).
+function findBankEntryByTopic(topic) {
+  if (!questionBank || !topic) return null;
+  for (const [ch, qs] of Object.entries(questionBank)) {
+    for (const q of qs) {
+      if (q && q.topic === topic) return [String(ch), q];
+    }
+  }
+  return null;
+}
+
+function removeWrongByTopic(topic) {
+  const before = wrongHistory.length;
+  wrongHistory = wrongHistory.filter(w => w.topic !== topic);
+  if (wrongHistory.length !== before) {
+    savePersisted(STORAGE_KEY_WRONG, wrongHistory);
+    updateBadges();
+  }
+}
+
+// Map stored wrong/bookmark items to [chapter, question] (prefer current bank version for corrected answer + 详解).
+function buildEntriesFromStored(list) {
+  return list.map(item =>
+    findBankEntryByTopic(item.topic) ||
+    [String(item.chapter || '?'), {
+      topic: String(item.topic),
+      answer: item.answer,
+      options: Array.isArray(item.options) ? item.options.map(String) : [],
+      analysis: item.analysis
+    }]
+  );
+}
+
+// Start a fresh practice round from a custom question set.
+// opts.removeOnCorrect: true → answering correctly drops the item from 错题本 (wrong-answer retry only).
+function startPracticeSession(entries, opts = {}) {
+  // shuffle for variety
+  for (let i = entries.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [entries[i], entries[j]] = [entries[j], entries[i]];
+  }
+  questions = entries;
+  currentIdx = 0;
+  sessionIncorrect = [];
+  sessionAnswers = {};
+  sessionSelections = {};
+  totalAnswered = 0;
+  reviewContext = null;
+  reviewReturnState = null;
+  retrySession = Boolean(opts.removeOnCorrect);
+
+  document.getElementById('setupPanel').style.display = 'none';
+  document.getElementById('mainContent').style.display = 'block';
+  document.getElementById('reportPanel').style.display = 'none';
+  switchTab('quiz');
+  renderQuestion();
+  saveSessionState();
+}
+
+// Re-practise all wrong questions; answering correctly removes it from 错题本.
+function retryWrongQuestions() {
+  if (wrongHistory.length === 0) { alert('错题本是空的，没有可重做的题目。'); return; }
+  if (!confirm('开始重做 ' + wrongHistory.length + ' 道错题？答对的题会移出错题本。')) return;
+  startPracticeSession(buildEntriesFromStored(wrongHistory), { removeOnCorrect: true });
+}
+
+// Re-practise all bookmarked questions; bookmarks are NOT removed (whatever the result).
+function retryBookmarkQuestions() {
+  if (bookmarks.length === 0) { alert('收藏夹是空的，没有可重做的题目。'); return; }
+  if (!confirm('开始重做 ' + bookmarks.length + ' 道收藏题？收藏不会被自动移除。')) return;
+  startPracticeSession(buildEntriesFromStored(bookmarks), { removeOnCorrect: false });
 }
 
 // ===== Render Bookmark List =====
@@ -1785,6 +1864,7 @@ function restart() {
   sessionAnswers = {};
   sessionSelections = {};
   totalAnswered = 0;
+  retrySession = false;
   document.getElementById('setupPanel').style.display = '';
   document.getElementById('mainContent').style.display = 'none';
   document.getElementById('reportPanel').style.display = 'none';
@@ -1802,6 +1882,7 @@ function saveSessionState() {
     sessionSelections,
     totalAnswered,
     currentTab,
+    retrySession,
     updatedAt: new Date().toISOString()
   });
 }
@@ -1832,6 +1913,7 @@ function restoreSessionIfAvailable() {
   sessionAnswers = typeof session.sessionAnswers === 'object' && session.sessionAnswers !== null ? session.sessionAnswers : {};
   sessionSelections = typeof session.sessionSelections === 'object' && session.sessionSelections !== null ? session.sessionSelections : {};
   totalAnswered = Number(session.totalAnswered) || Object.keys(sessionAnswers).length;
+  retrySession = Boolean(session.retrySession);
   reviewContext = null;
   reviewReturnState = null;
   sessionRestored = true;
