@@ -154,10 +154,9 @@
         "A. Concurrent process flow",
         "B. Iterative process flow",
         "C. Linear process flow",
-        "D. Spiral process flow",
-        "E. both a and c"
+        "D. Spiral process flow"
       ],
-      "analysis": "【翻译】\n下面哪些是被公认的过程流(process flow)类型？\nA. 并发过程流\nB. 迭代过程流\nC. 线性过程流\nD. 螺旋过程流\nE. 只选 A 和 C\n【解析】\n过程流指框架活动在时间上如何展开，公认的类型有线性、迭代、演化和并行（并行又称并发）。A、B、C 分别对应并发、迭代、线性，都成立；D 的螺旋是一种演化型过程模型，不属于过程流类型；E 漏掉了 B，集合不全。故选 ABC。"
+      "analysis": "【翻译】\n下面哪些是被公认的过程流(process flow)类型？\nA. 并发过程流\nB. 迭代过程流\nC. 线性过程流\nD. 螺旋过程流\n【解析】\n过程流描述框架活动随时间如何推进，公认的类型包括线性、迭代和并发(并行)。A、B、C 正好对应这三种，都成立。D 的螺旋是一种演化型过程模型，描述的是模型而非过程流的时间组织方式，不属于此列。故选 ABC。"
     },
     {
       "topic": "2. The communication activity is best handled for small projects using six distinct actions (inception, elicitation, elaboration, negotiation, specification, validation).",
@@ -193,10 +192,9 @@
         "A. SEI",
         "B. SPICE",
         "C. ISO 9000",
-        "D. ISO 9001",
-        "E. both b and d"
+        "D. ISO 9001"
       ],
-      "analysis": "【翻译】\n下面哪些是用来评估软件过程的标准？\nA. SEI\nB. SPICE\nC. ISO 9000\nD. ISO 9001\nE. 只选 B 和 D\n【解析】\nB 的 SPICE 即 ISO/IEC 15504，专用于过程能力评估；D 的 ISO 9001 是针对软件的可评估具体标准。A 的 SEI 是研究机构而非标准；C 的 ISO 9000 是质量管理体系系列的笼统统称，本题要的是具体评估标准；E 内容虽对，但作答取单字母组合。故选 BD。"
+      "analysis": "【翻译】\n下面哪些是用来评估软件过程的标准？\nA. SEI\nB. SPICE\nC. ISO 9000\nD. ISO 9001\n【解析】\nB 的 SPICE(即 ISO/IEC 15504)专门用于评估过程能力，D 的 ISO 9001 是可据以评估的具体质量标准，二者都是评估用标准。A 的 SEI 是提出 CMM 的研究机构而非标准本身；C 的 ISO 9000 只是质量管理体系系列的总称，并非可直接用于评估的具体标准。故选 BD。"
     }
   ],
   "4": [
@@ -262,10 +260,9 @@
         "A. Another name for concurrent engineering.",
         "B. Defines events that trigger engineering activity state transitions.",
         "C. Only used for development of parallel or distributed systems.",
-        "D. Used whenever a large number of change requests are anticipated.",
-        "E. Both a and b"
+        "D. Used whenever a large number of change requests are anticipated."
       ],
-      "analysis": "【翻译】\n并发开发模型(concurrent development model)\nA. 是并发工程(concurrent engineering)的另一个名字。\nB. 定义触发工程活动状态迁移的事件。\nC. 只用于并行或分布式系统的开发。\nD. 只要预计会有大量变更请求就采用它。\nE. a 和 b 都对。\n【解析】\n并发模型又称并发工程，A 对。它用一系列事件来触发各活动在不同状态间迁移，用活动网络描述开发过程，B 对。它对客户机/服务器应用尤其拿手，但并非只能用于并行或分布式系统，C 错。没有 D 这种限定说法，D 错。A、B 均成立（即选项 E），故选 AB。"
+      "analysis": "【翻译】\n并发开发模型(concurrent development model)是\nA. 并发工程(concurrent engineering)的另一个名字。\nB. 定义触发工程活动状态迁移的事件。\nC. 只用于并行或分布式系统的开发。\nD. 只要预计会有大量变更请求就采用它。\n【解析】\n并发模型又称并发工程，A 正确；它用一系列事件触发各活动在不同状态间迁移，以活动网络刻画开发过程，B 正确。它虽擅长客户机/服务器等应用，但并不局限于并行或分布式系统，C 错；它也没有“变更请求多才用”这种限定，D 错。故选 AB。"
     },
     {
       "topic": "7. The component-based development model is",
@@ -318,10 +315,9 @@
         "A. Accelerate software process improvement",
         "B. Allow better time management by highly trained professionals",
         "C. Build self-directed software teams",
-        "D. Show managers how to reduce costs and sustain quality",
-        "E. Both b and c"
+        "D. Show managers how to reduce costs and sustain quality"
       ],
-      "analysis": "【翻译】\n下面哪些是团队软件过程(team software process)的目标？\nA. 加速软件过程改进。\nB. 让训练有素的专业人员更好地管理时间。\nC. 建立自我管理的软件团队。\nD. 教管理者如何降低成本、维持质量。\nE. b 和 c 都对。\n【解析】\nTSP 强调团队自组织(self-directed)，对应 C；通过分析度量数据来改进团队过程，对应 A。B、D 都不是 TSP 列出的目标，是干扰项。正确组合是 A 和 C，而非选项 E 的 b 和 c。故选 AC。"
+      "analysis": "【翻译】\n下面哪些是团队软件过程(team software process)的目标？\nA. 加速软件过程改进。\nB. 让训练有素的专业人员更好地管理时间。\nC. 建立自我管理的软件团队。\nD. 教管理者如何降低成本、维持质量。\n【解析】\nTSP 旨在建立自我管理(self-directed)的软件团队，对应 C；并通过度量数据分析来加速团队过程改进，对应 A。B 的时间管理和 D 的降成本保质量都不是 TSP 设定的目标，属于干扰项。故选 AC。"
     },
     {
       "topic": "12. Process technology tools allow software organizations to compress schedules by skipping unimportant activities.",
@@ -370,10 +366,9 @@
         "A. Requirements gathering must be conducted very carefully",
         "B. Risk analysis must be conducted before planning takes place",
         "C. Software increments must be delivered in short time periods",
-        "D. Software processes must adapt to changes incrementally",
-        "E. Both c and d"
+        "D. Software processes must adapt to changes incrementally"
       ],
-      "analysis": "【翻译】\n怎样设计敏捷过程来应对不可预测性？\nA. 需求收集必须非常仔细地进行\nB. 规划之前必须先做风险分析\nC. 软件增量必须在很短的周期内交付\nD. 软件过程必须随变化增量式地自适应\nE. C 和 D 都对\n【解析】\n应对不可预测靠两点：C 短周期交付能尽快拿到反馈及时纠偏，D 过程本身随变化持续调整，二者即选项 E。A、B 是传统预测式开发想在前期把一切定死的思路，与敏捷拥抱变化相悖，故选 CD。"
+      "analysis": "【翻译】\n怎样设计敏捷过程来应对不可预测性？\nA. 需求收集必须非常仔细地进行\nB. 规划之前必须先做风险分析\nC. 软件增量必须在很短的周期内交付\nD. 软件过程必须随变化增量式地自适应\n【解析】\nC 用短周期交付尽快拿到反馈、及时纠偏，D 让过程本身随变化持续调整，二者正是应对不可预测性的核心做法。A、B 属于预测式开发想在前期把需求和风险一次性定死的思路，与敏捷拥抱变化相悖，故选 CD。"
     },
     {
       "topic": "4. In agile software processes the highest priorities is to satisfy the customer through early and continuous delivery of valuable software.",
@@ -440,10 +435,9 @@
         "A. Analysis",
         "B. Design",
         "C. Coding",
-        "D. Testing",
-        "E. Both a and b"
+        "D. Testing"
       ],
-      "analysis": "【翻译】\n敏捷建模（AM）为实践者在下面哪些软件任务中提供指导？\nA. 分析\nB. 设计\nC. 编码\nD. 测试\nE. A 和 B 都对\n【解析】\nAM 主张恰好够用的有效建模、保持模型简单，主要为分析和设计这两类任务提供轻量化指导，即选项 E。C、D 不归 AM 直接管，属于 XP 或测试驱动开发（TDD）的范畴，故选 AB。"
+      "analysis": "【翻译】\n敏捷建模（AM）为实践者在下面哪些软件任务中提供指导？\nA. 分析\nB. 设计\nC. 编码\nD. 测试\n【解析】\nAM 主张恰好够用、保持简单的有效建模，主要为分析(analysis)和设计(design)提供轻量化指导，故 A、B 正确。C、D 不在建模范畴，分别由极限编程(XP)和测试驱动开发(TDD)负责，故选 AB。"
     },
     {
       "topic": "11. Agile Unified Process uses the classic UP phased activities (inception, elaboration, construction, transition) to help the team visualize the overall process flow.",
@@ -501,10 +495,9 @@
         "A. Frenzied work atmosphere",
         "B. Inadequate budget",
         "C. Poorly coordinated software process",
-        "D. Unclear definition of team roles",
-        "E. a, b, d"
+        "D. Unclear definition of team roles"
       ],
-      "analysis": "【翻译】\n下面哪些会导致团队毒性(team toxicity)？\nA. 狂乱紧绷的工作氛围\nB. 预算不足\nC. 协调混乱的软件过程\nD. 团队角色定义不清\nE. a、b、d\n【解析】\n团队毒性来自内部因素：A、C、D 都会败坏团队氛围。B 是外部资源问题，不属于毒性来源；E 因含 B 而错。真正符合的是 A、C、D，故选 ACD。"
+      "analysis": "【翻译】\n下面哪些会导致团队毒性(team toxicity)？\nA. 狂乱紧绷的工作氛围\nB. 预算不足\nC. 协调混乱的软件过程\nD. 团队角色定义不清\n【解析】\n团队毒性主要来自团队内部的氛围与协作问题。A 让人长期处于高压焦躁状态，C 让过程混乱、责任互相推诿，D 让成员不知道各自该做什么，三者都会侵蚀团队健康。B 属于外部资源约束，不是团队内部毒性的来源。故选 ACD。"
     },
     {
       "topic": "6. Software engineering team structure is independent of problem complexity and size of the expected software products.",
@@ -567,10 +560,9 @@
         "A. Complexity of problem",
         "B. Different views of the problem",
         "C. Law of unintended consequences",
-        "D. Risk associated with decision",
-        "E. All of the above."
+        "D. Risk associated with decision"
       ],
-      "analysis": "【翻译】\n下面哪些因素会让全球软件团队的决策变得更复杂？\nA. 问题的复杂度\nB. 对问题的不同看法\nC. 非预期后果定律\nD. 决策伴随的风险\nE. 以上全部\n【解析】\nA 是问题本身难；B 是各地团队看法不一；C 是决定常牵出没料到的连锁反应；D 是决策的不确定性。四者都让决策更复杂，故选 ABCD。"
+      "analysis": "【翻译】\n下面哪些因素会让全球软件团队的决策变得更复杂？\nA. 问题的复杂度\nB. 对问题的不同看法\nC. 非预期后果定律(law of unintended consequences)\nD. 决策伴随的风险\n【解析】\nA 指问题本身难、可选方案多；B 指跨地域团队对同一问题理解不一致；C 指决策常引出事先没料到的连锁反应；D 指每个决策都带有不确定性和风险。四者都会增加决策难度。故选 ABCD。"
     }
   ],
   "7": [
@@ -719,10 +711,9 @@
         "A. basic problem understanding",
         "B. nature of the solution needed",
         "C. people who want a solution",
-        "D. none of the above",
-        "E. a, b, c"
+        "D. none of the above"
       ],
-      "analysis": "【翻译】\n在项目起始(inception)阶段，这些任务的目的是确定：\nA. 对问题的基本理解\nB. 所需解决方案的性质\nC. 谁想要这个解决方案\nD. 以上都不是\nE. a、b、c\n【解析】\n起始阶段先问一组基础问题，弄清问题本身(A)、谁要这个方案(C)、方案的性质(B)。D 显然错误；本题要求直接选出这三项而非合并选项 E，故选 ABC。"
+      "analysis": "【翻译】\n在项目起始(inception)阶段，这些任务的目的是确定：\nA. 对问题的基本理解\nB. 所需解决方案的性质\nC. 想要这个解决方案的人\nD. 以上都不是\n【解析】\n起始阶段通过一组基础问题先弄清问题本身(A)、所需方案的性质(B)以及谁需要这个方案(C)，三者都是要确定的内容。D 与此相反，自然不成立。故选 ABC。"
     },
     {
       "topic": "3. Three things that make requirements elicitation difficult are problems of",
@@ -731,10 +722,9 @@
         "A. budgeting",
         "B. scope",
         "C. understanding",
-        "D. volatility",
-        "E. b, c, d"
+        "D. volatility"
       ],
-      "analysis": "【翻译】\n使需求获取(elicitation)变困难的三个问题是：\nA. 预算\nB. 范围\nC. 理解\nD. 易变性\nE. b、c、d\n【解析】\n获取难主要来自范围(B，边界不清)、理解(C，客户也说不清要什么)、易变(D，需求老变)三方面。A 预算不属此列，本题要求直接选三项而非合并选项 E，故选 BCD。"
+      "analysis": "【翻译】\n使需求获取(elicitation)变困难的三个问题是：\nA. 预算\nB. 范围\nC. 理解\nD. 易变性\n【解析】\n需求获取的难点在于范围(B)边界不清、客户对自身需求理解(C)不到位、以及需求随时变动的易变性(D)。预算(A)属于项目管理范畴，不在此列。故选 BCD。"
     },
     {
       "topic": "4. A stakeholder is anyone who will purchase the completed software system under development.",
@@ -803,10 +793,9 @@
         "A. size of the budget.",
         "B. size of the product being built.",
         "C. software process being used.",
-        "D. stakeholders needs.",
-        "E. both a and b"
+        "D. stakeholders needs."
       ],
-      "analysis": "【翻译】\n需求获取(elicitation)阶段产出的工作产品会因什么而不同？\nA. 预算的大小\nB. 所建产品的规模\nC. 所用的软件过程\nD. 相关方的需求\nE. a 和 b\n【解析】\n获取产出的工作产品随系统的规模和复杂度变化，对应产品规模(B)与预算量级(A)。C、D 不是本题标准答案，故选 AB。"
+      "analysis": "【翻译】\n需求获取(elicitation)阶段产出的工作产品会因什么而不同？\nA. 预算的大小\nB. 所建产品的规模\nC. 所用的软件过程\nD. 相关方的需求\n【解析】\n获取阶段产出的工作产品随项目预算量级(A)和所建产品的规模(B)而变化，规模越大、投入越多，产出越正式越完整。软件过程(C)和相关方需求(D)影响的是其他方面，不决定这里产出的多少。故选 AB。"
     },
     {
       "topic": "11. User stories are complete descriptions the user needs and include the non-functional requirements for a software increment.",
@@ -1209,10 +1198,9 @@
         "A. architecture",
         "B. data",
         "C. interfaces",
-        "D. project scope",
-        "E. a, b, c"
+        "D. project scope"
       ],
-      "analysis": "【翻译】\n下面哪些是设计模型(design model)所关注的方面？\nA. 架构\nB. 数据\nC. 接口\nD. 项目范围\nE. a、b、c\n【解析】\n设计模型要给出软件的完整视图，因此涵盖数据(B)、架构(A)和接口(C)。D 是需求分析和项目管理的内容，不属于设计。E 只是把前三项罗列，本题直接选具体项，故选 ABC。"
+      "analysis": "【翻译】\n下面哪些是设计模型(design model)所关注的方面？\nA. 架构\nB. 数据\nC. 接口\nD. 项目范围\n【解析】\n设计模型要给出软件的完整视图，自然涵盖数据(B)、架构(A)和接口(C)三个层面。D 项目范围属于需求阶段和项目管理的范畴，不是设计模型要刻画的内容。故选 ABC。"
     },
     {
       "topic": "2. The importance of software design can be summarized in a single word",
@@ -1232,10 +1220,9 @@
         "A. exhibits strong coupling between its modules",
         "B. implements all requirements in the analysis model",
         "C. includes test cases for all components",
-        "D. provides a complete picture of the software",
-        "E. b and d"
+        "D. provides a complete picture of the software"
       ],
-      "analysis": "【翻译】\n下面哪些是好设计具备的特征？\nA. 模块之间表现出强耦合\nB. 实现分析模型中的全部需求\nC. 为所有构件都包含测试用例\nD. 提供软件的完整视图\nE. b 和 d\n【解析】\n好设计追求低耦合(low coupling)，A 说强耦合，错。B 实现全部需求、D 给出完整视图，都是好设计的特征。C 测试用例是测试阶段的产物，不归设计负责。E 内容正确但本题直接选具体项，故选 BD。"
+      "analysis": "【翻译】\n下面哪些是好设计具备的特征？\nA. 模块之间表现出强耦合\nB. 实现分析模型中的全部需求\nC. 为所有构件都包含测试用例\nD. 提供软件的完整视图\n【解析】\n好设计追求低耦合(low coupling)，A 强调强耦合恰好相反，错。B 完整实现需求、D 给出软件的完整视图，都是好设计的应有之义。C 测试用例是测试阶段的产物，不属于设计要承担的内容。故选 BD。"
     },
     {
       "topic": "4. Which of the following is not a characteristic common to all design methods?",
@@ -1255,10 +1242,9 @@
         "A. control",
         "B. data",
         "C. environmental",
-        "D. procedural",
-        "E. a, b, d"
+        "D. procedural"
       ],
-      "analysis": "【翻译】\n软件设计中用到哪些类型的抽象(abstraction)？\nA. 控制\nB. 数据\nC. 环境\nD. 过程\nE. a、b、d\n【解析】\n软件设计中的抽象只有三种：数据抽象、过程抽象、控制抽象，对应 A、B、D。C 环境抽象这个分类并不存在，是干扰项。E 罗列的就是这三项，本题直接选具体项，故选 ABD。"
+      "analysis": "【翻译】\n软件设计中用到哪些类型的抽象(abstraction)？\nA. 控制\nB. 数据\nC. 环境\nD. 过程\n【解析】\n软件设计中的抽象分为数据抽象、过程抽象和控制抽象三类，分别对应 B、D、A。C 环境抽象并不是软件设计里的抽象类型，属于干扰项。故选 ABD。"
     },
     {
       "topic": "6. Which of the following can be used to represent the architectural design of a piece of software?",
@@ -1456,10 +1442,9 @@
         "A. constraints",
         "B. set of components",
         "C. semantic models",
-        "D. syntactic models",
-        "E. a, b, c"
+        "D. syntactic models"
       ],
-      "analysis": "【翻译】\n一个架构风格(architectural style)包含下面哪些要素？\nA. 约束\nB. 组件集\nC. 语义模型\nD. 句法模型\nE. a、b、c\n【解析】\n架构风格的构成要素是组件集、连接件、约束和语义模型，故 A、B、C 都对。D 句法模型属于架构描述语言(ADL)的内容，不是风格要素。E 是打包项，本题标准答案直接给 ABC，故选 ABC。"
+      "analysis": "【翻译】\n一个架构风格(architectural style)包含下面哪些要素？\nA. 约束\nB. 组件集\nC. 语义模型\nD. 句法模型\n【解析】\n架构风格由组件集、连接件、约束以及语义模型共同构成，因此 A、B、C 都属于其要素。D 句法模型属于架构描述语言(ADL)的语法层面，不是风格本身的组成部分。故选 ABC。"
     },
     {
       "topic": "7. To determine the architectural style or combination of styles that best fits the proposed system, requirements engineering is used to uncover",
@@ -1488,10 +1473,9 @@
         "A. accessibility",
         "B. control",
         "C. data",
-        "D. implementation",
-        "E. b and c"
+        "D. implementation"
       ],
-      "analysis": "【翻译】\n用来评估架构设计质量的标准，应该基于系统的\nA. 可访问性\nB. 控制\nC. 数据\nD. 实现\nE. b 和 c\n【解析】\n架构本质上刻画的就是控制流和数据流如何组织，所以评估质量看控制(B)和数据(C)。A 属非功能层面，不是核心依据；D 是后期落地的事。E 是打包项，本题答案直接给 BC，故选 BC。"
+      "analysis": "【翻译】\n用来评估架构设计质量的标准，应该基于系统的\nA. 可访问性\nB. 控制\nC. 数据\nD. 实现\n【解析】\n架构刻画的核心是控制流与数据流如何组织，所以质量评估依据系统的控制(B)和数据(C)。A 可访问性属于非功能性表现，不是核心依据；D 实现是后期落地的细节，与架构层面的评估无关。故选 BC。"
     },
     {
       "topic": "10. Software architectural considerations often interact with each other and moderate each other.",
@@ -1518,10 +1502,9 @@
         "A. Peer-level systems",
         "B. Subordinate systems",
         "C. Superordinate systems",
-        "D. Working systems",
-        "E. a, b, c"
+        "D. Working systems"
       ],
-      "analysis": "【翻译】\n在做上下文中的系统建模时，与目标系统交互的外部系统被表示为\nA. 对等系统\nB. 下级系统\nC. 上级系统\nD. 工作系统\nE. a、b、c\n【解析】\n按层级分三类：上级系统(C)使用目标系统，下级系统(B)被目标系统使用，对等系统(A)与之平级互动，故 A、B、C 都对。D 工作系统不是标准分类。E 是打包项，本题答案直接给 ABC，故选 ABC。"
+      "analysis": "【翻译】\n在做上下文中的系统建模时，与目标系统交互的外部系统被表示为\nA. 对等系统\nB. 下级系统\nC. 上级系统\nD. 工作系统\n【解析】\n按交互层级，外部系统分为三类：上级系统(C)使用目标系统，下级系统(B)被目标系统使用，对等系统(A)与目标系统平级协作，因此 A、B、C 都对。D 工作系统不属于这一分类。故选 ABC。"
     },
     {
       "topic": "13. Once selected, archetypes always need to be refined further as architectural design proceeds.",
@@ -1550,10 +1533,9 @@
         "A. data flow view",
         "B. module view",
         "C. process view",
-        "D. user view",
-        "E. a, b, c"
+        "D. user view"
       ],
-      "analysis": "【翻译】\n在架构权衡分析法(ATAM)里，应该用哪些视图来描述架构风格？\nA. 数据流视图\nB. 模块视图\nC. 过程视图\nD. 用户视图\nE. a、b、c\n【解析】\nATAM 用三种视图描述架构风格：模块视图、过程视图、数据流视图，故 A、B、C 都对。D 用户视图不在其中。E 是打包项，本题答案直接给 ABC，故选 ABC。"
+      "analysis": "【翻译】\n在架构权衡分析法(ATAM)里，应该用哪些视图来描述架构风格？\nA. 数据流视图\nB. 模块视图\nC. 过程视图\nD. 用户视图\n【解析】\nATAM 用模块视图、过程视图和数据流视图三种视图来描述架构风格，因此 A、B、C 都对。D 用户视图关注的是使用者交互，不属于这套描述视图。故选 ABC。"
     },
     {
       "topic": "16. A useful technique for evaluating the overall complexity of a proposed architecture is to look at the component",
@@ -1562,10 +1544,9 @@
         "A. cohesion",
         "B. flow dependencies",
         "C. sharing dependencies",
-        "D. size",
-        "E. b and c"
+        "D. size"
       ],
-      "analysis": "【翻译】\n评估一个所提架构整体复杂度的有用办法，是看组件之间的\nA. 内聚\nB. 流依赖\nC. 共享依赖\nD. 规模\nE. b 和 c\n【解析】\n架构复杂度依据组件间的依赖关系评估，包括共享依赖、流依赖、约束依赖。选项中的 B 流依赖、C 共享依赖都属依赖度量。A 内聚是构件级设计质量指标，D 规模也不是依赖度量。E 是打包项，本题答案直接给 BC，故选 BC。"
+      "analysis": "【翻译】\n评估一个所提架构整体复杂度的有用办法，是看组件之间的\nA. 内聚\nB. 流依赖\nC. 共享依赖\nD. 规模\n【解析】\n架构整体复杂度由组件间的依赖关系来衡量，流依赖(B)和共享依赖(C)正是这类依赖度量。A 内聚(cohesion)是单个组件内部的设计质量指标，D 规模只是体量大小，二者都不反映组件之间的依赖复杂度。故选 BC。"
     },
     {
       "topic": "17. Software architects need to create consensus among software team members and other stakeholders.",
@@ -1690,10 +1671,9 @@
         "A. Algorithms",
         "B. Attributes",
         "C. Interfaces",
-        "D. Operations",
-        "E. b, c, d"
+        "D. Operations"
       ],
-      "analysis": "【翻译】\n在构件设计中，细化(elaboration)需要详细描述下面哪些要素？\nA. 算法\nB. 属性\nC. 接口\nD. 操作\nE. b, c, d\n【解析】\n细化要识别接口、细化属性及其数据类型、详述每个操作的处理流程，即属性、接口、操作三样。A 算法只是包含在操作内部的处理流，未单列。故选 BCD。"
+      "analysis": "【翻译】\n在构件设计中，细化(elaboration)需要详细描述下面哪些要素？\nA. 算法\nB. 属性\nC. 接口\nD. 操作\n【解析】\n细化阶段要把构件的属性及其数据类型定清楚、把对外接口刻画明确、再把每个操作的处理流程逐一展开，所以 B、C、D 都需要详述。A 算法只是某个操作内部的具体处理逻辑，已被包含在操作的描述里，不单独作为细化要素。故选 BCD。"
     },
     {
       "topic": "10. In component-level design persistent data sources refer to",
@@ -1702,10 +1682,9 @@
         "A. Component libraries",
         "B. Databases",
         "C. Files",
-        "D. All of the above",
-        "E. b and c"
+        "D. All of the above"
       ],
-      "analysis": "【翻译】\n在构件级设计中，持久数据源(persistent data sources)指的是\nA. 构件库\nB. 数据库\nC. 文件\nD. 以上全部\nE. b 和 c\n【解析】\n持久指关机后仍能长期保存数据的地方，即数据库和文件。A 构件库是复用资源，不是存数据的地方；D 含了 A 故错。故选 BC。"
+      "analysis": "【翻译】\n在构件级设计中，持久数据源(persistent data sources)指的是\nA. 构件库\nB. 数据库\nC. 文件\nD. 以上全部\n【解析】\n持久(persistent)意味着数据在程序结束乃至断电后仍长期保存，能做到这点的是数据库和文件，所以 B、C 正确。A 构件库是供复用的代码资源，并非存放业务数据的地方；D 把不该算入的 A 也包了进来，因而不成立。故选 BC。"
     },
     {
       "topic": "11. WebApp content design at the component level focuses on content objects and the manner in which they interact.",
@@ -1741,10 +1720,9 @@
         "A. branching",
         "B. condition",
         "C. repetition",
-        "D. sequence",
-        "E. b, c, d"
+        "D. sequence"
       ],
-      "analysis": "【翻译】\n下面哪些构造被用在结构化编程(structured programming)里？\nA. 分支跳转\nB. 条件\nC. 重复\nD. 顺序\nE. b, c, d\n【解析】\n结构化编程靠顺序、条件、重复三种基本结构搭起逻辑。A 分支跳转（如 goto 任意跳转）恰恰是结构化要排除的东西。故选 BCD。"
+      "analysis": "【翻译】\n下面哪些构造被用在结构化编程(structured programming)里？\nA. 分支跳转\nB. 条件\nC. 重复\nD. 顺序\n【解析】\n结构化编程(structured programming)只用顺序、条件、重复这三种基本控制结构来组织逻辑，因此 B、C、D 都属于它。A 分支跳转指的是像 goto 那样的任意跳转，会破坏清晰的控制流，正是结构化编程要摒弃的，故不在其中。故选 BCD。"
     },
     {
       "topic": "15. In component-based software engineering, the development team examines the requirements to see which are amenable to composition, rather than construction, before beginning detailed design tasks.",
@@ -1830,10 +1808,9 @@
         "A. define intuitive shortcuts",
         "B. disclose information in a progressive fashion",
         "C. establish meaningful defaults",
-        "D. provide an on-line tutorial",
-        "E. a, b, c"
+        "D. provide an on-line tutorial"
       ],
-      "analysis": "【翻译】\n下面哪些界面设计原则能减轻用户的记忆负担？\nA. 定义直观的快捷方式\nB. 以渐进方式逐步披露信息\nC. 建立有意义的默认值\nD. 提供在线教程\nE. a、b、c\n【解析】\n减轻记忆负担的标准手段包括设直观快捷方式、渐进披露信息、设有意义的默认值，A、B、C 正是这三条。D 属于帮助设施，是教用户怎么用，不算减负，故选 ABC。"
+      "analysis": "【翻译】\n下面哪些界面设计原则能减轻用户的记忆负担？\nA. 定义直观的快捷方式\nB. 以渐进方式逐步披露信息\nC. 建立有意义的默认值\nD. 提供在线教程\n【解析】\n减轻记忆负担的核心思路是让用户少记、少回忆。A 直观快捷方式可凭联想触发，B 渐进披露只在需要时呈现细节，C 有意义的默认值省去用户重新设定，三者都直接降低记忆负担。D 是帮助设施，教用户如何操作，不属于减负手段，故选 ABC。"
     },
     {
       "topic": "3. The reason for reducing the user's memory load is make his or her interaction with the computer quicker to complete.",
@@ -1851,10 +1828,9 @@
         "A. each application should have its own distinctive look and feel",
         "B. input mechanisms remain the same throughout the application",
         "C. navigational methods are context sensitive",
-        "D. visual information is organized according to a design standard",
-        "E. b and d"
+        "D. visual information is organized according to a design standard"
       ],
-      "analysis": "【翻译】\n界面一致性意味着\nA. 每个应用都该有自己独特的外观和感受\nB. 输入机制在整个应用中保持不变\nC. 导航方法是上下文敏感的\nD. 视觉信息按统一的设计标准来组织\nE. b 和 d\n【解析】\n一致性要求同族应用统一、不轻易改动已建立的交互模型。B 输入机制统一、D 视觉信息按统一标准组织，正是一致性的体现。A 强调各自独特，恰恰破坏一致性；C 是另一回事，与一致性无关，故选 BD。"
+      "analysis": "【翻译】\n界面一致性意味着\nA. 每个应用都该有自己独特的外观和感受\nB. 输入机制在整个应用中保持不变\nC. 导航方法是上下文敏感的\nD. 视觉信息按统一的设计标准来组织\n【解析】\n一致性(consistency)要求同一应用内交互方式统一、可预期。B 输入机制全程保持一致、D 视觉信息遵循统一设计标准，正是一致性的体现。A 强调各自独特的外观，与一致性相悖；C 导航随上下文变化是另一类设计考量，并非一致性，故选 BD。"
     },
     {
       "topic": "5. If past interactive models have created certain user expectations it is not generally good to make changes to the model.",
@@ -1916,10 +1892,9 @@
         "A. have users indicate their preferences on questionnaires",
         "B. rely on the judgement of experienced programmers",
         "C. study existing computer-based solutions",
-        "D. observe users performing tasks manually",
-        "E. c and d"
+        "D. observe users performing tasks manually"
       ],
-      "analysis": "【翻译】\n用户任务分析中哪些做法对界面设计真正有用？\nA. 让用户在问卷上勾选偏好\nB. 依赖有经验程序员的判断\nC. 研究现有的基于计算机的解决方案\nD. 观察用户手工执行任务\nE. c 和 d\n【解析】\n任务分析要弄清用户实际怎么干活。C 研究现有系统、D 观察真实手工操作，都能从真实任务中提炼信息。A、B 脱离了对真实任务的观察，靠不住，故选 CD。"
+      "analysis": "【翻译】\n用户任务分析中哪些做法对界面设计真正有用？\nA. 让用户在问卷上勾选偏好\nB. 依赖有经验程序员的判断\nC. 研究现有的基于计算机的解决方案\nD. 观察用户手工执行任务\n【解析】\n任务分析(task analysis)要弄清用户实际如何完成工作。C 研究已有系统、D 观察真实手工操作，都能从真实任务中提炼出有效信息。A 问卷偏好和 B 程序员主观判断都脱离对真实任务的考察，不可靠，故选 CD。"
     },
     {
       "topic": "11. Object-oriented analysis techniques can be used to identify and refine user task objects and actions without any need to refer to the user voice.",
@@ -1973,10 +1948,9 @@
         "A. adaptive user profiles",
         "B. error handling",
         "C. resolution of graphics displays",
-        "D. system response time",
-        "E. b and d"
+        "D. system response time"
       ],
-      "analysis": "【翻译】\n几乎每个用户界面都会碰到的共性设计议题包括\nA. 自适应用户画像\nB. 错误处理\nC. 图形显示的分辨率\nD. 系统响应时间\nE. b 和 d\n【解析】\n几乎每个界面都绕不开的共性议题包含响应时间和错误处理，对应 B、D。A 自适应用户画像和 C 显示分辨率都只在特定场景才需考虑，不是普遍议题，故选 BD。"
+      "analysis": "【翻译】\n几乎每个用户界面都会碰到的共性设计议题包括\nA. 自适应用户画像\nB. 错误处理\nC. 图形显示的分辨率\nD. 系统响应时间\n【解析】\n几乎所有界面都绕不开的共性议题是 B 错误处理和 D 系统响应时间，前者关乎出错时如何反馈与恢复，后者直接影响交互体验。A 自适应用户画像和 C 图形分辨率只在特定应用或显示场景才需考虑，不具普遍性，故选 BD。"
     },
     {
       "topic": "17. It is more important to capture the user's attention with flashy features than ergonomically sound screen layouts when building a WebApp.",
@@ -1994,10 +1968,9 @@
         "A. down time for the application",
         "B. number of user errors",
         "C. software reliability",
-        "D. time spent looking at help materials",
-        "E. b and d"
+        "D. time spent looking at help materials"
       ],
-      "analysis": "【翻译】\n在观察用户与系统交互的过程中，可以收集到哪些可用性度量？\nA. 应用的宕机时间\nB. 用户犯错的次数\nC. 软件可靠性\nD. 查看帮助材料所花的时间\nE. b 和 d\n【解析】\n通过观察用户行为可得的可用性指标包括用户犯错次数和查阅帮助所花时间，对应 B、D。A 宕机时间和 C 软件可靠性属于系统或可靠性度量，无法从观察用户交互直接得到，故选 BD。"
+      "analysis": "【翻译】\n在观察用户与系统交互的过程中，可以收集到哪些可用性度量？\nA. 应用的宕机时间\nB. 用户犯错的次数\nC. 软件可靠性\nD. 查看帮助材料所花的时间\n【解析】\n可用性(usability)度量需能从用户行为中直接观察到。B 用户犯错次数和 D 查阅帮助所花时间都能在观察交互时即时记录。A 宕机时间和 C 软件可靠性反映的是系统运行质量，无法靠观察用户操作得到，故选 BD。"
     }
   ],
   "16": [
@@ -2086,10 +2059,9 @@
         "A. Business",
         "B. Context",
         "C. Database",
-        "D. Infrastructure",
-        "E. c and d"
+        "D. Infrastructure"
       ],
-      "analysis": "【翻译】\n在模式组织表(pattern organizing table)中，下面哪些问题类型被用作表格的列标题？\nA. 业务(Business)\nB. 上下文(Context)\nC. 数据库(Database)\nD. 基础设施(Infrastructure)\nE. c 和 d\n【解析】\n该表按问题类型分列，列标题包含数据库(C)、基础设施(D)这类维度；A 业务和 B 上下文不是它的列类型。答案是 C 和 D，故选 CD。"
+      "analysis": "【翻译】\n在模式组织表(pattern organizing table)中，下面哪些问题类型被用作表格的列标题？\nA. 业务(Business)\nB. 上下文(Context)\nC. 数据库(Database)\nD. 基础设施(Infrastructure)\n【解析】\n模式组织表按技术维度分列，列标题对应的是数据库(C)和基础设施(D)这类问题类型。A 业务和 B 上下文不属于该表的列维度。故选 CD。"
     },
     {
       "topic": "10. Most mistakes in pattern-based design can be avoided by judicious use of review techniques.",
@@ -2136,10 +2108,9 @@
         "A. Aesthetics",
         "B. Design focus",
         "C. Granularity",
-        "D. Usability",
-        "E. b and c"
+        "D. Usability"
       ],
-      "analysis": "【翻译】\nWebApp 设计模式可以从下面哪些维度(dimensions)来分类？\nA. 美观(Aesthetics)\nB. 设计聚焦(Design focus)\nC. 粒度(Granularity)\nD. 易用性(Usability)\nE. b 和 c\n【解析】\nWebApp 模式沿两个维度分类：设计聚焦(B，关注信息架构、导航、交互、表现、功能)和粒度(C，从架构到构件到设计的层级)。A 美观、D 易用性属于质量属性，不是分类维度。答案是 B 和 C，故选 BC。"
+      "analysis": "【翻译】\nWebApp 设计模式可以从下面哪些维度(dimensions)来分类？\nA. 美观(Aesthetics)\nB. 设计聚焦(Design focus)\nC. 粒度(Granularity)\nD. 易用性(Usability)\n【解析】\nWebApp 模式沿两个维度分类：设计聚焦(B)关注信息架构、导航、交互、表现、功能等关注点，粒度(C)体现从架构到构件再到设计的层级。A 美观和 D 易用性是质量属性，不是分类维度。故选 BC。"
     },
     {
       "topic": "15. Which of the following are levels of design focus that can be used to categorize WebApp patterns?",
@@ -2148,10 +2119,9 @@
         "A. Behavioral patterns",
         "B. Functional patterns",
         "C. Layout patterns",
-        "D. Navigation patterns",
-        "E. b and d"
+        "D. Navigation patterns"
       ],
-      "analysis": "【翻译】\n下面哪些属于可以用来给 WebApp 模式分类的设计聚焦(design focus)层次？\nA. 行为型模式(Behavioral patterns)\nB. 功能模式(Functional patterns)\nC. 布局模式(Layout patterns)\nD. 导航模式(Navigation patterns)\nE. b 和 d\n【解析】\n设计聚焦的类别有信息架构、导航、交互、表现、功能，故 B 功能模式和 D 导航模式属于此列。A 行为型模式是 GoF 设计模式的分类，C 布局模式是 UI 模式的类别，都不属于。答案是 B 和 D，故选 BD。"
+      "analysis": "【翻译】\n下面哪些属于可以用来给 WebApp 模式分类的设计聚焦(design focus)层次？\nA. 行为型模式(Behavioral patterns)\nB. 功能模式(Functional patterns)\nC. 布局模式(Layout patterns)\nD. 导航模式(Navigation patterns)\n【解析】\n设计聚焦按关注点划分，涵盖信息架构、导航、交互、表现、功能，因此 B 功能模式和 D 导航模式属于这一维度。A 行为型模式是通用设计模式(GoF)的分类，C 布局模式属于界面表现层的 UI 模式，都不在设计聚焦的层次里。故选 BD。"
     },
     {
       "topic": "16. Which of the levels of granularity that can be used to describe WebApp patterns?",
@@ -2160,10 +2130,9 @@
         "A. Architectural patterns",
         "B. Component patterns",
         "C. Design patterns",
-        "D. Interactions patterns",
-        "E. a, b, c"
+        "D. Interactions patterns"
       ],
-      "analysis": "【翻译】\n下面哪些属于可以用来描述 WebApp 模式的粒度(granularity)层次？\nA. 体系结构模式(Architectural patterns)\nB. 构件模式(Component patterns)\nC. 设计模式(Design patterns)\nD. 交互模式(Interaction patterns)\nE. a、b、c\n【解析】\n粒度按结构从大到小分为体系结构模式(A)、构件模式(B)、设计模式(C)。D 交互模式属于设计聚焦维度，不是粒度层次。答案是 A、B、C，故选 ABC。"
+      "analysis": "【翻译】\n下面哪些属于可以用来描述 WebApp 模式的粒度(granularity)层次？\nA. 体系结构模式(Architectural patterns)\nB. 构件模式(Component patterns)\nC. 设计模式(Design patterns)\nD. 交互模式(Interaction patterns)\n【解析】\n粒度按结构规模从大到小划分为体系结构模式(A)、构件模式(B)和设计模式(C)。D 交互模式属于设计聚焦维度的关注点，不是粒度层次。故选 ABC。"
     },
     {
       "topic": "17. Mobile app user interface patterns can be represented as a collection of best of breed screen images.",
@@ -2194,10 +2163,9 @@
         "A. Simplicity",
         "B. Consistency",
         "C. Navigability",
-        "D. Visual appeal",
-        "E. All of the above."
+        "D. Visual appeal"
       ],
-      "analysis": "【翻译】\n下面哪些是每个 WebApp 都应追求的设计目标？\nA. 简单性(Simplicity)\nB. 一致性(Consistency)\nC. 可导航性(Navigability)\nD. 视觉吸引(Visual appeal)\nE. 以上全部。\n【解析】\nA、B、C、D 都是每个 WebApp 都要做到的设计目标：界面内容别太复杂、风格操作要统一、用户能方便找路、看着要舒服。本题逐项确认这四项，故选 ABCD。"
+      "analysis": "【翻译】\n下面哪些是每个 WebApp 都应追求的设计目标？\nA. 简单性(Simplicity)\nB. 一致性(Consistency)\nC. 可导航性(Navigability)\nD. 视觉吸引(Visual appeal)\n【解析】\nA 让界面与内容保持简洁，避免冗杂；B 保证风格与操作在各页面统一；C 让用户随时清楚自己的位置并方便找到去向；D 使外观舒适、有吸引力。这四项是任何 WebApp 都需达成的基本设计目标，故选 ABCD。"
     },
     {
       "topic": "3. Which of the following not part of the design pyramid for WebE design?",
@@ -2420,10 +2388,9 @@
         "A. Inconsistency",
         "B. Interoperability",
         "C. Lean design",
-        "D. Overdesigning",
-        "E. a and d"
+        "D. Overdesigning"
       ],
-      "analysis": "【翻译】\n下面哪些属于移动应用常见的设计错误？\nA. 不一致\nB. 互操作性\nC. 精简设计\nD. 过度设计\nE. a 和 d\n【解析】\nA 不一致和 D 过度设计都是常见设计错误。B 互操作性不是错误；C 精简设计反而是提倡的优点。E 把 A、D 凑在一起。两个错误是 A 和 D，故选 AD。"
+      "analysis": "【翻译】\n下列哪些属于移动应用常见的设计错误？\nA. 不一致(inconsistency)\nB. 互操作性(interoperability)\nC. 精简设计(lean design)\nD. 过度设计(overdesigning)\n【解析】界面与交互前后不一致会让用户困惑，是典型错误，A 对；功能堆砌、过度设计会增加负担并拖慢性能，D 对。互操作性是应用应具备的良好特性而非错误，B 错；精简设计强调界面简洁高效，是提倡的优点而非缺陷，C 错。故选 AD。"
     },
     {
       "topic": "8. It is better to multiple short pages than long scrolling forms when implementing mobile device user interfaces.",
@@ -2508,10 +2475,9 @@
         "A. Functionality",
         "B. Portability",
         "C. Reliability",
-        "D. Visual appeal",
-        "E. a, b, c"
+        "D. Visual appeal"
       ],
-      "analysis": "【翻译】\n下面哪些是 ISO 9126 的软件质量因素？\nA. 功能性\nB. 可移植性\nC. 可靠性\nD. 视觉吸引力\nE. a, b, c\n【解析】\nISO 9126 的六大因素是功能性、可靠性、易用性、效率、可维护性、可移植性。A、B、C 都在其中。D 视觉吸引力(visual appeal)属于美学范畴，是 Garvin 八维度的内容，不在 9126。E 正好是 a、b、c 的组合，故选 ABC。"
+      "analysis": "【翻译】\n下面哪些是 ISO 9126 的软件质量因素？\nA. 功能性\nB. 可移植性\nC. 可靠性\nD. 视觉吸引力\n【解析】\nISO 9126 定义的六大质量因素是功能性、可靠性、易用性、效率、可维护性和可移植性(portability)。A 功能性、B 可移植性、C 可靠性都在其中。D 视觉吸引力(visual appeal)属于美学范畴，并不在这套质量模型里。故选 ABC。"
     },
     {
       "topic": "6. Developers need to create a collection of targeted questions to asses each quality factor.",
@@ -2605,10 +2571,9 @@
         "A. change",
         "B. cost",
         "C. error",
-        "D. quality",
-        "E. a and d"
+        "D. quality"
       ],
-      "analysis": "【翻译】\n项目计划应包含针对____管理和____管理的明确技术。\nA. 变更\nB. 成本\nC. 错误\nD. 质量\nE. a and d\n【解析】\n要达成软件质量，项目计划应包含针对质量管理(quality management)和变更管理(change management)的明确技术。A 变更、D 质量正好对应，E 即 a and d，故选 AD。"
+      "analysis": "【翻译】\n项目计划应包含针对____管理和____管理的明确技术。\nA. 变更\nB. 成本\nC. 错误\nD. 质量\n【解析】\n为保障软件质量，项目计划必须明确给出变更管理(change management)和质量管理(quality management)的技术，因此 A、D 正确。B 成本、C 错误虽与项目相关，但不是此处强调的两类管理。故选 AD。"
     },
     {
       "topic": "16. Quality control encompasses a set of software engineering actions that help to ensure that each work product meets its quality goals.",
@@ -2691,10 +2656,9 @@
         "A. amount of preparation",
         "B. reviewer follow-up",
         "C. size of project budget",
-        "D. structure of review",
-        "E. a, b, d"
+        "D. structure of review"
       ],
-      "analysis": "【翻译】\n评审的正式程度由下面哪些因素决定？\nA. 准备的充分程度\nB. 评审者的后续跟进\nC. 项目预算规模\nD. 评审的结构\nE. a、b、d\n【解析】\n正式度取决于准备是否充分(A)、是否对修正进行跟进(B)、评审结构是否定义良好(D)；C 项目预算与正式度无关。故选 ABD。"
+      "analysis": "【翻译】\n评审的正式程度由下面哪些因素决定？\nA. 准备的充分程度\nB. 评审者的后续跟进\nC. 项目预算规模\nD. 评审的结构\n【解析】\n评审越正式，对前期准备(A)、对发现问题的后续跟进(B)、以及评审过程的组织结构(D)要求越高，这三项共同刻画了正式度。C 项目预算属于管理层面，与评审本身正式与否无关。故选 ABD。"
     },
     {
       "topic": "8. An informal review may consist of which of the following?",
@@ -2703,10 +2667,9 @@
         "A. casual meeting",
         "B. desk check",
         "C. inspection",
-        "D. pair programming",
-        "E. a and b"
+        "D. pair programming"
       ],
-      "analysis": "【翻译】\n一次非正式评审(informal review)可能包含下面哪些形式？\nA. 随意的碰头会\nB. 桌面检查\nC. 检查(inspection)\nD. 结对编程\nE. a 和 b\n【解析】\nA 随意会议和 B 桌面检查都属于非正式评审；C 检查是结构严谨的正式技术评审，不属此类；D 结对编程不在本题答案范围内。故选 AB。"
+      "analysis": "【翻译】\n一次非正式评审(informal review)可能包含下面哪些形式？\nA. 随意的碰头会\nB. 桌面检查\nC. 检查(inspection)\nD. 结对编程\n【解析】\n非正式评审强调轻量、无固定流程，随意碰头会(A)和桌面检查(B，即开发者自查或请同事过目)都属于这类。C 检查(inspection)有明确角色、议程和记录，是结构严谨的正式技术评审；D 结对编程是一种开发实践，不算评审形式。故选 AB。"
     },
     {
       "topic": "9. Which of the following are objectives for formal technical reviews?",
@@ -2726,10 +2689,9 @@
         "A. accept the work product without modification",
         "B. modify the work product and continue the review",
         "C. reject the product due to stylistic discrepancies",
-        "D. reject the product due to severe errors",
-        "E. a and d"
+        "D. reject the product due to severe errors"
       ],
-      "analysis": "【翻译】\n一次正式技术评审结束时，全体与会者可以决定？\nA. 不做修改就接受工作产品\nB. 边修改工作产品边继续评审\nC. 因风格上的差异而拒收\nD. 因存在严重错误而拒收\nE. a 和 d\n【解析】\n会议结束的结论是三选一：原样接受(A)、因严重错误拒收(D)、或暂时接受待修改后再定。B 不能边改边评，C 风格小差异不足以否决。故选 AD。"
+      "analysis": "【翻译】\n一次正式技术评审结束时，全体与会者可以决定？\nA. 不做修改就接受工作产品\nB. 边修改工作产品边继续评审\nC. 因风格上的差异而拒收\nD. 因存在严重错误而拒收\n【解析】\n评审结束时的结论只能在原样接受(A)、因严重错误拒收(D)、或暂时接受待修改后复核之间取舍。B 不成立，修改要在会后进行而非边改边评；C 风格差异属于次要问题，不足以否决整个产品。故选 AD。"
     },
     {
       "topic": "11. A review summary report answers which three questions?",
@@ -2847,10 +2809,9 @@
         "A. errors in accuracy",
         "B. errors in design",
         "C. errors in implementation",
-        "D. errors in operation",
-        "E. b and c"
+        "D. errors in operation"
       ],
-      "analysis": "【翻译】\n软件可靠性问题几乎总能追溯到：\nA. 精度上的错误\nB. 设计上的错误\nC. 实现上的错误\nD. 操作上的错误\nE. b 和 c\n【解析】\n软件不会磨损老化，可靠性问题的根子在内部：要么是设计阶段埋下的错误，要么是编码实现写出的 bug。A 精度、D 操作都不是根本来源，只有 B 和 C 是真正的源头。故选 BC。"
+      "analysis": "【翻译】\n软件可靠性问题几乎总能追溯到：\nA. 精度上的错误\nB. 设计上的错误\nC. 实现上的错误\nD. 操作上的错误\n【解析】\n软件不会像硬件那样磨损老化，可靠性问题的根源都在内部缺陷：要么是设计阶段埋下的错误，要么是编码实现写出的 bug，因此 B 和 C 是真正的来源。A 精度只是某类错误的具体表现、D 操作属于使用环节，都不是根本来源。故选 BC。"
     },
     {
       "topic": "10. Software safety is a quality assurance activity that focuses on hazards that",
@@ -2934,10 +2895,9 @@
         "A. conduct formal technical reviews prior to testing",
         "B. specify requirements in a quantifiable manner",
         "C. use independent test teams",
-        "D. wait till code is written prior to writing the test plan",
-        "E. a and b"
+        "D. wait till code is written prior to writing the test plan"
       ],
-      "analysis": "【翻译】\n成功的软件测试过程需要解决下面哪些策略性问题？\nA. 在测试之前进行正式技术评审\nB. 以可量化的方式说明需求\nC. 使用独立测试团队\nD. 等代码写完再写测试计划\nE. a 和 b\n【解析】\nA 对，提前评审能在测试前清掉一批缺陷；B 对，需求量化才能判断软件是否达标；C 有好处但非此处必备要点；D 错，测试计划应尽早制定。E 即 a 和 b，故选 AB。"
+      "analysis": "【翻译】\n成功的软件测试过程需要解决下面哪些策略性问题？\nA. 在测试之前进行正式技术评审\nB. 以可量化的方式说明需求\nC. 使用独立测试团队\nD. 等代码写完再写测试计划\n【解析】\nA 对，测试前先做正式技术评审能提前清掉一批缺陷，让测试更有效率；B 对，需求量化后才有客观标准判断软件是否达标。C 虽有好处但不是测试过程必须解决的策略问题；D 错，测试计划应尽早制定，而非等代码完成。故选 AB。"
     },
     {
       "topic": "6. Which of the following need to be assessed during unit testing?",
@@ -2946,10 +2906,9 @@
         "A. algorithmic performance",
         "B. code stability",
         "C. error handling",
-        "D. execution paths",
-        "E. c and d"
+        "D. execution paths"
       ],
-      "analysis": "【翻译】\n单元测试期间需要评估下面哪些内容？\nA. 算法性能\nB. 代码稳定性\nC. 错误处理\nD. 执行路径\nE. c 和 d\n【解析】\n单元测试关注接口、局部数据结构、边界条件、独立路径和错误处理路径。C 对应错误处理路径，D 对应执行路径，均属单元测试范畴；A 属性能测试，B 不是单元测试评估项。E 即 c 和 d，故选 CD。"
+      "analysis": "【翻译】\n单元测试期间需要评估下面哪些内容？\nA. 算法性能\nB. 代码稳定性\nC. 错误处理\nD. 执行路径\n【解析】\n单元测试关注模块内部的接口、边界条件、独立路径和错误处理路径。C 对，要验证错误处理路径是否正确；D 对，要覆盖模块内的各条执行路径。A 属于性能测试范畴，B 不是单元测试评估的对象。故选 CD。"
     },
     {
       "topic": "7. Units and stubs are not needed for unit testing because the modules are tested independently of one another.",
@@ -2967,10 +2926,9 @@
         "A. low level modules never need testing",
         "B. major decision points are tested early",
         "C. no drivers need to be written",
-        "D. no stubs need to be written",
-        "E. b and c"
+        "D. no stubs need to be written"
       ],
-      "analysis": "【翻译】\n自顶向下集成测试(top-down integration testing)的主要优点是\nA. 低层模块永远不需要测试\nB. 主要决策点能尽早被测\nC. 不需要编写驱动\nD. 不需要编写桩\nE. b 和 c\n【解析】\n自顶向下先测顶层、用桩替代下层。A 错，低层模块仍要测；B 对，关键控制逻辑在顶层，先测顶层就先测到决策点；C 对，用真实上层调用下层，无需写驱动；D 错，恰恰要写大量桩。E 即 b 和 c，故选 BC。"
+      "analysis": "【翻译】\n自顶向下集成测试(top-down integration testing)的主要优点是\nA. 低层模块永远不需要测试\nB. 主要决策点能尽早被测\nC. 不需要编写驱动\nD. 不需要编写桩\n【解析】\n自顶向下先测顶层、用桩(stub)替代尚未集成的下层模块。B 对，关键控制逻辑集中在顶层，先测顶层就能尽早覆盖主要决策点；C 对，由真实上层调用下层，无需另写驱动(driver)。A 错，低层模块最终仍需测试；D 错，这种方式恰恰要编写大量桩。故选 BC。"
     },
     {
       "topic": "9. Bottom-up integration testing has as it's major advantage(s) that",
@@ -2990,10 +2948,9 @@
         "A. control logic is invoked",
         "B. data flow paths are established",
         "C. drivers require testing",
-        "D. all of the above",
-        "E. a and b"
+        "D. all of the above"
       ],
-      "analysis": "【翻译】\n回归测试(regression testing)应成为集成测试的常规一环，因为每往系统加入一个新模块就会带来新的\nA. 被调用的控制逻辑\nB. 建立的数据流路径\nC. 需要测试的驱动\nD. 以上全部\nE. a 和 b\n【解析】\n每加新模块软件配置就变，可能引入副作用。A 对，新模块触发新控制流；B 对，新模块接出新数据通路，二者都可能破坏已测好的部分。C 不是回归测试的原因。E 即 a 和 b，故选 AB。"
+      "analysis": "【翻译】\n回归测试(regression testing)应成为集成测试的常规一环，因为每往系统加入一个新模块就会带来新的\nA. 被调用的控制逻辑\nB. 建立的数据流路径\nC. 需要测试的驱动\n【解析】\n每加入一个新模块，软件配置就发生变化，可能对已测好的部分产生副作用。A 对，新模块会触发新的控制流；B 对，新模块接出新的数据通路，二者都可能破坏原有功能，因此需要回归测试。C 不是引入回归测试的原因。故选 AB。"
     },
     {
       "topic": "11. Smoke testing might best be described as",
@@ -3134,10 +3091,9 @@
         "A. backtracking",
         "B. brute force",
         "C. cause elimination",
-        "D. code restructuring",
-        "E. a, b, c"
+        "D. code restructuring"
       ],
-      "analysis": "【翻译】\n下面哪些是调试(debugging)的方法？\nA. 回溯法\nB. 蛮力法\nC. 原因排除\nD. 代码重构\nE. a、b、c\n【解析】\n蛮力法靠大量打印硬找，回溯法从出错处往回倒推，原因排除涵盖归纳与演绎，三者都是调试方法。D 代码重构是改善设计结构的手段，不是调试方法。E 即 a、b、c，故选 ABC。"
+      "analysis": "【翻译】\n下面哪些是调试(debugging)的方法？\nA. 回溯法\nB. 蛮力法\nC. 原因排除\nD. 代码重构\n【解析】\nA 对，回溯法从出错处沿程序往回倒推定位缺陷；B 对，蛮力法靠大量打印和内存转储硬找问题；C 对，原因排除通过归纳与演绎缩小怀疑范围。D 错，代码重构是改善设计结构的手段，并不用于查找缺陷。故选 ABC。"
     }
   ],
   "23": [
@@ -3190,10 +3146,9 @@
         "A. behavioral errors",
         "B. logic errors",
         "C. performance errors",
-        "D. typographical errors",
-        "E. b and d"
+        "D. typographical errors"
       ],
-      "analysis": "【翻译】\n哪类错误是黑盒测试会漏掉、而白盒测试能查出来的？\nA. 行为错误(behavioral errors)\nB. 逻辑错误(logic errors)\nC. 性能错误(performance errors)\nD. 笔误(typographical errors)\nE. b 和 d\n【解析】\n逻辑错误常藏在很少被走到的罕见路径上，笔误也随机散落在代码各处，黑盒按功能测容易绕过去，只有白盒覆盖内部路径才能揪出来。A 和 C 恰是黑盒关注的范畴。故选 BD。"
+      "analysis": "【翻译】\n哪类错误是黑盒测试会漏掉、而白盒测试能查出来的？\nA. 行为错误(behavioral errors)\nB. 逻辑错误(logic errors)\nC. 性能错误(performance errors)\nD. 笔误(typographical errors)\n【解析】\n白盒测试覆盖程序内部路径，逻辑错误(B)常藏在很少被走到的分支里，笔误(D)也随机散落在代码各处，黑盒只按功能从外部测，往往绕过去查不到。行为错误(A)和性能错误(C)正是黑盒从外部表现就能观察到的范畴，并非白盒独有。故选 BD。"
     },
     {
       "topic": "6. Program flow graphs are identical to program flowcharts.",
@@ -3264,10 +3219,9 @@
         "A. incorrect or missing functions",
         "B. interface errors",
         "C. performance errors",
-        "D. none of the above",
-        "E. a, b, c"
+        "D. none of the above"
       ],
-      "analysis": "【翻译】\n黑盒测试(black-box testing)试图发现下列哪些类别的错误？\nA. 功能不正确或缺失\nB. 接口错误\nC. 性能错误\nD. 以上都不是\nE. a、b、c\n【解析】\n黑盒从功能和外部表现入手，能查出功能不正确或缺失、接口错误、性能错误等多类问题。A、B、C 都对，D 显然不对，三者正好对应 E，故选 ABC。"
+      "analysis": "【翻译】\n黑盒测试(black-box testing)试图发现下列哪些类别的错误？\nA. 功能不正确或缺失\nB. 接口错误\nC. 性能错误\nD. 以上都不是\n【解析】\n黑盒测试从功能和外部表现入手，不看内部结构，因此能查出功能不正确或缺失(A)、接口错误(B)以及性能错误(C)等多类问题，三者都在其覆盖范围内。既然这些错误确实能被发现，D 自然不成立。故选 ABC。"
     },
     {
       "topic": "13. Graph-based testing methods can only be used for object-oriented systems",
@@ -3381,10 +3335,9 @@
         "A. Cluster testing",
         "B. Glass-box testing",
         "C. Thread-based testing",
-        "D. Use-based testing",
-        "E. a, c, d"
+        "D. Use-based testing"
       ],
-      "analysis": "【翻译】\n面向对象软件的集成测试可以用下面哪些测试策略完成？\nA. 簇测试\nB. 玻璃盒（白盒）测试\nC. 基于线程的测试\nD. 基于使用的测试\nE. a、c、d\n【解析】\nOO 集成测试有三种策略：基于线程的测试、基于使用的测试、簇测试，故 A、C、D 都对。B 是按程序内部结构设计用例的方法，属测试方法分类，不是 OO 集成策略。E 内容与正确答案一致，但按字母升序应写作 ACD，故选 ACD。"
+      "analysis": "【翻译】\n面向对象软件的集成测试可以用下面哪些测试策略完成？\nA. 簇测试\nB. 玻璃盒（白盒）测试\nC. 基于线程的测试\nD. 基于使用的测试\n【解析】\n面向对象软件的集成测试有三种常用策略：簇测试(cluster testing)按协作的类簇组织、基于线程的测试(thread-based testing)按响应某一事件的类组组织、基于使用的测试(use-based testing)从独立类向依赖类逐层推进，所以 A、C、D 都对。B 是依据程序内部结构来设计用例的单元层方法，属于测试技术而非集成策略，故不选。故选 ACD。"
     },
     {
       "topic": "6. Validation of object-oriented software focuses on user visible actions and outputs from the system.",
@@ -3520,10 +3473,9 @@
         "A. Component testing",
         "B. Content testing",
         "C. Navigation testing",
-        "D. Usability testing",
-        "E. both a and c"
+        "D. Usability testing"
       ],
-      "analysis": "【翻译】\n在构建 Web 应用体系结构的过程中，哪些类型的测试被当作集成测试来用？\nA. 构件测试\nB. 内容测试\nC. 导航测试\nD. 可用性测试\nE. A 和 C\n【解析】\n架构逐块搭起来时，承担集成测试角色的是构件测试(检验功能、数据库等构件能否跑通)和导航测试(检验页面间链接跳转)。A、C 都对；B 偏单元层面、D 偏确认层面，都不算。E 正好合并 A 和 C，故选 AC。"
+      "analysis": "【翻译】\n在构建 Web 应用体系结构的过程中，哪些类型的测试被当作集成测试来用？\nA. 构件测试\nB. 内容测试\nC. 导航测试\nD. 可用性测试\n【解析】\n体系结构是把各个构件逐块组装起来的，因此承担集成测试角色的是构件测试(检验功能、数据库等构件能否协同跑通)和导航测试(检验页面间链接与跳转是否正确)，故 A、C 对。B 内容测试针对单个内容对象，偏单元层面；D 可用性测试关注用户体验，属确认层面，二者都不算集成测试。故选 AC。"
     },
     {
       "topic": "6. Which of the following is not one of the objectives of WebApp content testing?",
@@ -3748,10 +3700,9 @@
         "A. Assessing the impact of production environments",
         "B. Failing to create test cases",
         "C. Not understanding user demographics",
-        "D. Testing for variable performance on user devices",
-        "E. both a and d"
+        "D. Testing for variable performance on user devices"
       ],
-      "analysis": "【翻译】\n下面哪些是做野外测试(testing in the wild)的理由？\nA. 评估生产环境带来的影响\nB. 没能创建测试用例\nC. 不了解用户人群\nD. 在用户设备上测试可变的性能\nE. A 和 D 都对\n【解析】\n野外测试要在不可控的真实环境、真机和真实网络负载下进行：A 评估真实生产环境的影响、D 在参差不齐的真机上测性能，都是正当理由。B、C 是测试做得不好的缺陷，是问题不是理由。E 即 A 与 D。故选 AD。"
+      "analysis": "【翻译】\n下面哪些是做野外测试(testing in the wild)的理由？\nA. 评估生产环境带来的影响\nB. 没能创建测试用例\nC. 不了解用户人群\nD. 在用户设备上测试可变的性能\n【解析】\n野外测试要在不可控的真实环境、真机和真实网络负载下进行：A 评估真实生产环境的影响、D 在参差不齐的真机上测性能，都是正当理由。B、C 说的是测试没做好的缺陷，是问题不是理由。故选 AD。"
     },
     {
       "topic": "8. When testing the quality of user interaction the focus should be on user visible interaction mechanisms.",
@@ -3769,10 +3720,9 @@
         "A. Automatic tool use is difficult",
         "B. Creating functions to simulate events",
         "C. Screen size variation",
-        "D. Using paper prototypes",
-        "E. a, b, c"
+        "D. Using paper prototypes"
       ],
-      "analysis": "【翻译】\n下面哪些因素会增加测试移动应用手势(gestures)的难度？\nA. 自动化工具难以使用\nB. 需要编写函数来模拟事件\nC. 屏幕尺寸差异\nD. 使用纸质原型\nE. A、B、C\n【解析】\nA 滑动、捏合、长按等连续动作工具难精确模拟；B 触发手势事件常要自写模拟代码；C 屏幕一变，触发区域和滑动距离都要反复适配，三者都增加难度。D 纸质原型是早期低保真手段，纸上做不了手势，不属此列。E 即 A、B、C。故选 ABC。"
+      "analysis": "【翻译】\n下面哪些因素会增加测试移动应用手势(gestures)的难度？\nA. 自动化工具难以使用\nB. 需要编写函数来模拟事件\nC. 屏幕尺寸差异\nD. 使用纸质原型\n【解析】\nA 滑动、捏合、长按等连续动作，工具难以精确模拟；B 触发手势事件常要自己写函数模拟；C 屏幕一变，触发区域和滑动距离都得反复适配，三者都增加难度。D 纸质原型是早期低保真手段，纸上做不了手势，不属此列。故选 ABC。"
     },
     {
       "topic": "10. Continuous speech recognition techniques have eliminated the need for key entry in MobileApps.",
@@ -3924,10 +3874,9 @@
         "A. Audits",
         "B. Deployment",
         "C. Inspections",
-        "D. Testing",
-        "E. a, b, c"
+        "D. Testing"
       ],
-      "analysis": "【翻译】\n安全正确性检查应当包含在下面哪些活动中？\nA. 审计\nB. 部署\nC. 检查\nD. 测试\nE. a、b、c\n【解析】\n正确性检查的数据来自审计(A)、检查(C)和测试(D)，汇总后形成安全论证(security case)。B 部署属于交付环节，不是数据来源。合并项 E 错把部署算入、又漏掉测试，与正确集合不符也要排除，故选 ACD。"
+      "analysis": "【翻译】\n安全正确性检查应当包含在下面哪些活动中？\nA. 审计\nB. 部署\nC. 检查\nD. 测试\n【解析】\n安全正确性检查的证据来自审计(A)、检查(C)和测试(D)，这三类活动都能验证系统是否满足安全要求，汇总后构成安全论证(security case)。B 部署只是把系统投入运行的交付环节，本身不产生正确性验证数据。故选 ACD。"
     },
     {
       "topic": "11. Which is not one of the elements of a security case?",
@@ -4164,10 +4113,9 @@
         "A. case tools",
         "B. documentation",
         "C. executable programs",
-        "D. test data",
-        "E. All of the above."
+        "D. test data"
       ],
-      "analysis": "【翻译】\n下面哪些是有效的软件配置项？\nA. CASE 工具\nB. 文档\nC. 可执行程序\nD. 测试数据\nE. 以上全部\n【解析】\n软件配置项(SCI)涵盖程序、文档、数据以及构建用到的工具。A 的开发工具版本也需纳入管理以保证构建可复现，B、C、D 分别属于文档、程序、数据，都是典型 SCI。E 表示全选。按本题列具体字母的惯例，故选 ABCD。"
+      "analysis": "【翻译】\n下面哪些是有效的软件配置项？\nA. CASE 工具\nB. 文档\nC. 可执行程序\nD. 测试数据\n【解析】\n软件配置项(SCI)涵盖软件过程中产生并需要受控管理的各类工作产品。B 是文档、C 是可执行程序、D 是测试数据，三者都是典型配置项；A 的开发工具版本也要纳入管理，以保证构建可复现，因此同样属于配置项。故选 ABCD。"
     },
     {
       "topic": "2. Which of the following is not considered one of the four important elements that should exist when a configuration management system is developed?",
@@ -4196,10 +4144,9 @@
         "A. design specification",
         "B. marketing data",
         "C. organizational structure description",
-        "D. test plans",
-        "E. b and c"
+        "D. test plans"
       ],
-      "analysis": "【翻译】\n哪些配置对象通常不会出现在项目数据库中？\nA. 设计规约\nB. 营销数据\nC. 组织结构描述\nD. 测试计划\nE. b 和 c\n【解析】\n项目数据库存放工程过程产出的工作产品。A、D 是典型工程产品，会入库。B(营销数据)、C(组织结构描述)属于经营管理信息，不是工程配置对象，通常不入库。E 即 B 和 C，按列具体字母的惯例，故选 BC。"
+      "analysis": "【翻译】\n哪些配置对象通常不会出现在项目数据库中？\nA. 设计规约\nB. 营销数据\nC. 组织结构描述\nD. 测试计划\n【解析】\n项目数据库存放工程过程产出的工作产品，A 设计规约和 D 测试计划都是典型工程产品，会入库。B 营销数据和 C 组织结构描述属于经营与管理信息，不是工程配置对象，通常不入库。故选 BC。"
     },
     {
       "topic": "5. Modern software engineering practices usually attempt to maintain SCI's in a project database or repository.",
@@ -4308,10 +4255,9 @@
         "A. content",
         "B. cost",
         "C. people",
-        "D. politics",
-        "E. a, b, c"
+        "D. politics"
       ],
-      "analysis": "【翻译】\n开发 Web 和移动应用时需考虑的配置问题包括：\nA. 内容\nB. 成本\nC. 人员\nD. 政治（归属）\nE. a、b、c\n【解析】\nWeb 与移动应用的配置问题为内容、人员、可扩展性、政治，A、C、D 都是独立条目。B(成本)只是政治条目下的一个子问句，不能单列。E 含错误的 cost 又漏掉 politics，对不上。按列具体字母的惯例，故选 ACD。"
+      "analysis": "【翻译】\n开发 Web 和移动应用时需考虑的配置问题包括：\nA. 内容\nB. 成本\nC. 人员\nD. 政治（归属）\n【解析】\nWeb 与移动应用因变更频繁、内容驱动，需重点考虑内容(A)、人员(C)和政治归属(D)等配置问题。B 成本不是这里独立的配置问题维度，归不进来。故选 ACD。"
     },
     {
       "topic": "16. Web and Mobile App configuration objects can be managed in much the same way as conventional software configuration objects except for:",
@@ -4449,10 +4395,9 @@
         "A. architectural structure",
         "B. data structural relationships",
         "C. internal module complexity",
-        "D. module effectiveness",
-        "E. a and d"
+        "D. module effectiveness"
       ],
-      "analysis": "【翻译】\n架构设计度量关注的是\nA. 架构结构\nB. 数据结构关系\nC. 模块内部复杂度\nD. 模块有效性\nE. a 和 d\n【解析】\n架构度量看的是整个系统的搭建方式以及模块之间的连接与有效性，焦点是 A 架构结构和 D 模块有效性。C 模块内部复杂度属于构件级度量，B 数据结构关系说法不准确，E 正好合并 A 与 D，故选 AD。"
+      "analysis": "【翻译】\n架构设计度量关注的是\nA. 架构结构\nB. 数据结构关系\nC. 模块内部复杂度\nD. 模块有效性\n【解析】\n架构度量看的是整个系统的搭建方式以及模块在其中是否各司其职，因此 A 架构结构和 D 模块有效性都属于它的关注点。C 模块内部复杂度是构件级度量的范畴，B 数据结构关系并非架构层面的衡量对象。故选 AD。"
     },
     {
       "topic": "10. Which of the following is not a measurable characteristic of an object-oriented design?",
@@ -4503,10 +4448,9 @@
         "A. complexity",
         "B. coupling",
         "C. module cohesion",
-        "D. performance",
-        "E. a, b, c"
+        "D. performance"
       ],
-      "analysis": "【翻译】\n构件级度量包括对哪些方面的测量？\nA. 复杂度\nB. 耦合\nC. 模块内聚\nD. 性能\nE. a、b、c\n【解析】\n构件级设计度量主要是三类：复杂度(如圈复杂度)、耦合、内聚，对应 A、B、C。D 性能不属于构件级设计度量。E 正好合并这三项，故选 ABC。"
+      "analysis": "【翻译】\n构件级度量包括对哪些方面的测量？\nA. 复杂度\nB. 耦合\nC. 模块内聚\nD. 性能\n【解析】\n构件级设计度量衡量单个模块的内在质量，主要是复杂度(如圈复杂度)、耦合(coupling)和内聚(cohesion)，对应 A、B、C。D 性能属于运行期表现，不是设计阶段的构件度量。故选 ABC。"
     },
     {
       "topic": "15. Because the class is the dominant unit in OO systems very few metrics have been proposed for operations that reside within a class.",
@@ -4542,10 +4486,9 @@
         "A. modules in the program",
         "B. operands in the program",
         "C. operators in the program",
-        "D. volume elements in the program",
-        "E. b and c"
+        "D. volume elements in the program"
       ],
-      "analysis": "【翻译】\nHalstead 的源代码度量基于程序中什么的数量？\nA. 程序中的模块\nB. 程序中的操作数\nC. 程序中的运算符\nD. 程序中的体积元素\nE. b 和 c\n【解析】\nHalstead 软件科学的整套度量都建立在程序中运算符(operators)与操作数(operands)的计数之上，既数种类也数出现次数。A 模块、D 体积元素都不是其基础。E 合并 B 与 C，故选 BC。"
+      "analysis": "【翻译】\nHalstead 的源代码度量基于程序中什么的数量？\nA. 程序中的模块\nB. 程序中的操作数\nC. 程序中的运算符\nD. 程序中的体积元素\n【解析】\nHalstead 软件科学的整套度量都建立在运算符(operators)与操作数(operands)的计数之上，既数种类也数出现次数，故 B、C 正确。A 模块和 D 体积元素都不是这套度量的统计基础。故选 BC。"
     },
     {
       "topic": "19. Software testing metrics fall into two broad categories",
@@ -4554,10 +4497,9 @@
         "A. metrics that focus on defect removal effectiveness",
         "B. metrics that focus on test coverage",
         "C. metrics that estimate the duration of the testing process",
-        "D. metrics that predict the number of test cases required",
-        "E. b and d"
+        "D. metrics that predict the number of test cases required"
       ],
-      "analysis": "【翻译】\n软件测试度量大致分为两大类\nA. 关注缺陷移除有效性的度量\nB. 关注测试覆盖率的度量\nC. 估算测试过程时长的度量\nD. 预测所需测试用例数量的度量\nE. b 和 d\n【解析】\n测试度量分两类：一类关注测试覆盖率(B)，另一类预测所需测试用例数或测试工作量(D)。A 缺陷移除有效性和 C 估算测试时长都不属于这两类划分。E 合并 B 与 D，故选 BD。"
+      "analysis": "【翻译】\n软件测试度量大致分为两大类\nA. 关注缺陷移除有效性的度量\nB. 关注测试覆盖率的度量\nC. 估算测试过程时长的度量\nD. 预测所需测试用例数量的度量\n【解析】\n测试度量按两大类划分：一类衡量测试覆盖率(B)，另一类预测所需测试用例的数量或工作量(D)。A 缺陷移除有效性和 C 估算测试时长都不属于这两类划分。故选 BD。"
     },
     {
       "topic": "20. The IEEE software maturity index (SMI) is used to provide a measure of the",
@@ -4661,10 +4603,9 @@
         "A. degree of communication desired",
         "B. predicted size of the resulting program",
         "C. rigidity of the delivery date",
-        "D. size of the project budget",
-        "E. a, b, c"
+        "D. size of the project budget"
       ],
-      "analysis": "【翻译】\n为软件团队选择组织结构时应考虑哪些因素？\nA. 所需的沟通程度\nB. 预计的程序规模\nC. 交付期的刚性\nD. 项目预算规模\nE. a、b、c\n【解析】\n选组织结构要看问题难度、程序规模、团队存续时间、可模块化程度、质量与可靠性要求、交付期刚性、所需沟通程度。A、B、C 都在其中，D 项目预算不在此列，故选 ABC。"
+      "analysis": "【翻译】\n为软件团队选择组织结构时应考虑哪些因素？\nA. 所需的沟通程度\nB. 预计的程序规模\nC. 交付期的刚性\nD. 项目预算规模\n【解析】\n组织结构取决于问题难度、程序规模、可模块化程度、质量要求、交付期刚性以及团队所需的沟通程度，因此 A、B、C 都是要考虑的因素。D 项目预算属于资源约束，不影响如何组织团队，故选 ABC。"
     },
     {
       "topic": "10. One of the best ways to avoid frustration during the software development process is to",
@@ -4715,10 +4656,9 @@
         "A. customer workflow",
         "B. functionality to be delivered",
         "C. process used to deliver functionality",
-        "D. software process model",
-        "E. b and c"
+        "D. software process model"
       ],
-      "analysis": "【翻译】\n在项目确定范围的活动中，问题分解主要沿哪两个方向展开？\nA. 客户工作流\nB. 要交付的功能\nC. 交付这些功能所用的过程\nD. 软件过程模型\nE. b 和 c\n【解析】\n分解从两个维度进行：要交付的功能(产品角度)和交付功能所用的过程(过程角度)，即 B 和 C。A 客户工作流、D 过程模型都不是这两个维度，故选 BC。"
+      "analysis": "【翻译】\n在项目确定范围的活动中，问题分解主要沿哪些方向展开？\nA. 客户工作流\nB. 要交付的功能\nC. 交付这些功能所用的过程\nD. 软件过程模型\n【解析】\n问题分解从产品和过程两个维度进行：要交付的功能(B)和交付这些功能所用的过程(C)。A 客户工作流是需求层面的内容，D 软件过程模型是更宏观的方法选择，二者都不是这里的分解维度，故选 BC。"
     },
     {
       "topic": "15. Product and process decomposition occurs simultaneously as the project plan evolves.",
@@ -4747,10 +4687,9 @@
         "A. double the project team size",
         "B. request a large budget",
         "C. start on the right foot",
-        "D. track progress",
-        "E. c and d"
+        "D. track progress"
       ],
-      "analysis": "【翻译】\n软件项目经理该如何行动以把软件失败的风险降到最低？\nA. 把团队人数翻倍\nB. 申请大笔预算\nC. 良好开端\nD. 跟踪进度\nE. c 和 d\n【解析】\n降低失败风险的常识做法包括良好开端(start on the right foot，开局就理解问题、定现实目标)和跟踪进度(track progress，持续监控、及时发现偏差)，即 C 和 D。A 加人、B 加钱反而可能加剧风险，故选 CD。"
+      "analysis": "【翻译】\n软件项目经理该如何行动以把软件失败的风险降到最低？\nA. 把团队人数翻倍\nB. 申请大笔预算\nC. 良好开端\nD. 跟踪进度\n【解析】\n降低失败风险的有效做法是良好开端(C，开局就理解问题、设定现实目标)和持续跟踪进度(D，及时发现偏差并纠正)。A 盲目加人会增加沟通成本反而拖慢进度，B 多要预算并不能解决根本问题，故选 CD。"
     },
     {
       "topic": "18. The W5HH principle contains which of the following questions?",
@@ -4759,10 +4698,9 @@
         "A. Why is the system being developed?",
         "B. What will be done by whom?",
         "C. Where are they organizationally located?",
-        "D. How much of each resource is required?",
-        "E. a, c d"
+        "D. How much of each resource is required?"
       ],
-      "analysis": "【翻译】\nW5HH 原则包含下面哪些问题？\nA. 为什么要开发该系统？\nB. 由谁来做什么？\nC. 他们在组织上位于何处？\nD. 每种资源各需要多少？\nE. a、c、d\n【解析】\nW5HH 是七个问题：为什么(Why)、做什么(What)、何时(When)、谁来做(Who)、在哪里(Where)、怎么做(How)、需要多少(How much)。A 对应 Why，C 对应 Where，D 对应 How much。B 把 What 和 Who 合并改写，不是原始表述，故选 ACD。"
+      "analysis": "【翻译】\nW5HH 原则包含下面哪些问题？\nA. 为什么要开发该系统？\nB. 由谁来做什么？\nC. 他们在组织上位于何处？\nD. 每种资源各需要多少？\n【解析】\nW5HH 由七个问题组成：为什么(Why)、做什么(What)、何时(When)、谁来做(Who)、在哪里(Where)、怎么做(How)、需要多少(How much)。A 对应 Why，C 对应 Where，D 对应 How much，均与原始问题一致。B 把做什么和由谁来做两个独立问题混在一起，并非其中的标准问题，故选 ACD。"
     },
     {
       "topic": "19. Which of these are critical practices for performance-based project management?",
@@ -4771,10 +4709,9 @@
         "A. assessing product usability",
         "B. defect tracking against quality targets",
         "C. empirical cost estimation",
-        "D. formal risk management",
-        "E. b, c, d"
+        "D. formal risk management"
       ],
-      "analysis": "【翻译】\n下面哪些属于基于绩效的项目管理的关键实践？\nA. 评估产品可用性\nB. 对照质量目标的缺陷跟踪\nC. 经验式的成本估算\nD. 正式的风险管理\nE. b、c、d\n【解析】\n关键实践包括正式的风险管理、经验式成本与进度估算、基于度量的管理、挣值跟踪、对照质量目标的缺陷跟踪等。B、C、D 都在其中，A 评估可用性不在清单内，故选 BCD。"
+      "analysis": "【翻译】\n下面哪些属于基于绩效的项目管理的关键实践？\nA. 评估产品可用性\nB. 对照质量目标的缺陷跟踪\nC. 经验式的成本估算\nD. 正式的风险管理\n【解析】\n基于绩效的项目管理强调用可度量的方式控制项目，关键实践包括正式的风险管理(D)、经验式的成本与进度估算(C)以及对照质量目标的缺陷跟踪(B)。A 评估产品可用性属于产品质量评价，不属于这类项目管理实践，故选 BCD。"
     }
   ],
   "32": [
@@ -4785,10 +4722,9 @@
         "A. to characterize them",
         "B. to evaluate them",
         "C. to price them",
-        "D. to improve them",
-        "E. a, b, d"
+        "D. to improve them"
       ],
-      "analysis": "【翻译】\n度量软件过程、产品和资源的正当理由有哪些？\nA. 为了刻画它们\nB. 为了评价它们\nC. 为了给它们定价\nD. 为了改进它们\nE. a、b、d\n【解析】\n度量的根本目的是刻画(characterize)、评价(evaluate)、预测、改进(improve)。A、B、D 分别对应刻画、评价、改进，都对；C 是商业定价，不是度量的目的。E 即把 A、B、D 合并，本题按单字母记，故选 ABD。"
+      "analysis": "【翻译】\n度量软件过程、产品和资源的正当理由有哪些？\nA. 为了刻画它们\nB. 为了评价它们\nC. 为了给它们定价\nD. 为了改进它们\n【解析】\n度量的目的是了解现状与寻求提升，A 刻画(characterize)、B 评价(evaluate)、D 改进(improve)都属于这一范畴，故正确。C 定价是商业行为，与度量软件本身的工程目的无关，故错。故选 ABD。"
     },
     {
       "topic": "2. Process indicators enable a software project manager to",
@@ -4808,10 +4744,9 @@
         "A. to evaluate the performance of software development teams.",
         "B. to appraise the performance of individual team members.",
         "C. to make strategic changes to the software process.",
-        "D. to make tactical changes during a software project.",
-        "E. c and d"
+        "D. to make tactical changes during a software project."
       ],
-      "analysis": "【翻译】\n公开度量(public metrics)用来做什么？\nA. 评价软件开发团队的绩效\nB. 考核团队中个人的表现\nC. 对软件过程做战略性改变\nD. 在软件项目进行中做战术性调整\nE. c 和 d\n【解析】\n公开度量是团队、过程层面的数据，用于改进过程，故 C、D 对。A、B 属于私有度量(private metrics)的范畴，尤其度量绝不能用来考核个人，B 明确错。E 即 C、D 合并，升序为 CD，故选 CD。"
+      "analysis": "【翻译】\n公开度量(public metrics)用来做什么？\nA. 评价软件开发团队的绩效\nB. 考核团队中个人的表现\nC. 对软件过程做战略性改变\nD. 在软件项目进行中做战术性调整\n【解析】\n公开度量是面向团队和过程的汇总数据，用于在更大尺度上改进开发方式，C 战略性调整与 D 战术性调整都属此类，故正确。A、B 涉及评判团队或个人的绩效，应属个人度量(private metrics)，公开数据绝不能用来考核个人，故错。故选 CD。"
     },
     {
       "topic": "4. Which of the following items are not measured by software project metrics?",
@@ -4851,10 +4786,9 @@
         "A. FP is easily computed.",
         "B. FP is a language dependent measure.",
         "C. FP is a language independent measure.",
-        "D. FP can be computed before a design is completed.",
-        "E. c and d"
+        "D. FP can be computed before a design is completed."
       ],
-      "analysis": "【翻译】\n用功能点(FP)度量软件交付的功能性，优点有哪些？\nA. FP 易于计算\nB. FP 是语言相关的度量\nC. FP 是语言无关的度量\nD. FP 在设计完成前就能算出\nE. c 和 d\n【解析】\nFP 衡量功能本身，与编程语言无关，C 对；FP 依据需求里能数出的输入、输出、查询、文件、接口等特征，过程早期即可估算，D 对。A 错，FP 要主观判断复杂度权重，算起来麻烦；B 语言相关是 LOC 的特点。E 即 C、D 合并为 CD，故选 CD。"
+      "analysis": "【翻译】\n用功能点(FP)度量软件交付的功能性，优点有哪些？\nA. FP 易于计算\nB. FP 是语言相关的度量\nC. FP 是语言无关的度量\nD. FP 在设计完成前就能算出\n【解析】\nFP 衡量的是功能本身，不依赖实现语言，C 正确；它依据需求中可数的输入、输出、查询、文件和接口来估算，因此设计完成前即可算出，D 正确。A 错，FP 需主观判定各项复杂度权重，计算并不轻松；B 错，语言相关是代码行(LOC)的特征而非 FP。故选 CD。"
     },
     {
       "topic": "8. There is no need to reconcile LOC and FP measures since each in meaningful in its own right as a project measure.",
@@ -4943,10 +4877,9 @@
         "A. based on reasonable guestimates from past projects",
         "B. measured consistently across projects",
         "C. drawn from similar projects",
-        "D. based on all previously completed projects",
-        "E. b and c"
+        "D. based on all previously completed projects"
       ],
-      "analysis": "【翻译】\n要有效辅助过程改进，所用的基线数据(baseline data)必须：\nA. 基于对过去项目的合理猜测\nB. 跨各项目以一致的方式测量\nC. 取自相似的项目\nD. 基于所有已完成的项目\nE. b 和 c\n【解析】\n有效基线数据要求口径一致才可比(B)、取自相似项目才有可比意义(C)。A 靠猜不可靠；D 不限定相似性，把不相干项目都拉进来反而引入噪声。E 即 B、C 合并为 BC，故选 BC。"
+      "analysis": "【翻译】\n要有效辅助过程改进，所用的基线数据(baseline data)必须：\nA. 基于对过去项目的合理猜测\nB. 跨各项目以一致的方式测量\nC. 取自相似的项目\nD. 基于所有已完成的项目\n【解析】\n基线数据要能横向比较才有意义，B 要求各项目测量口径一致，C 要求取自相似项目，二者共同保证可比性，故正确。A 靠猜测得来，缺乏可靠性；D 把所有项目不加区分地纳入，会引入不相干项目的噪声，故均错。故选 BC。"
     },
     {
       "topic": "17. Baseline data must be collected in an on-going manner and cannot be computed by formal study of historical project data.",
@@ -5004,10 +4937,9 @@
         "A. functionality",
         "B. performance",
         "C. costs",
-        "D. schedule",
-        "E. a and b"
+        "D. schedule"
       ],
-      "analysis": "【翻译】\n项目范围被定义为界定系统哪些方面的手段\nA. 功能\nB. 性能\nC. 成本\nD. 进度\nE. a 和 b\n【解析】\n范围要框定交付的功能、特性以及性能、约束、接口等指标，所以 A、B 都是范围界定的对象。C 成本和 D 进度是后续估算的结果，不是范围本身界定的东西。E 把功能和性能合在一起，故选 AB。"
+      "analysis": "【翻译】\n项目范围被定义为界定系统哪些方面的手段\nA. 功能\nB. 性能\nC. 成本\nD. 进度\n【解析】\n范围用来框定要交付的功能、特性以及性能、约束等指标，所以 A、B 都是范围所界定的对象。C 成本和 D 进度是后续估算得出的结果，不是范围本身界定的内容。故选 AB。"
     },
     {
       "topic": "4. Software feasibility is based on which of the following",
@@ -5049,10 +4981,9 @@
         "A. customers",
         "B. developers",
         "C. hardware platforms",
-        "D. software tools",
-        "E. c and d"
+        "D. software tools"
       ],
-      "analysis": "【翻译】\n软件工程环境(SEE)由下列哪些构成？\nA. 客户\nB. 开发者\nC. 硬件平台\nD. 软件工具\nE. c 和 d\n【解析】\nSEE 指支撑开发的环境资源，即硬件平台和软件工具，故 C、D 对。A 客户、B 开发者是人，属于干系人或人力资源，不算环境资源。E 把硬件平台和软件工具合在一起，故选 CD。"
+      "analysis": "【翻译】\n软件工程环境(SEE)由下列哪些构成？\nA. 客户\nB. 开发者\nC. 硬件平台\nD. 软件工具\n【解析】\nSEE 指支撑开发的环境资源，即硬件平台和软件工具，故 C、D 对。A 客户和 B 开发者是人，属于干系人或人力资源，不算环境资源。故选 CD。"
     },
     {
       "topic": "8. Software project estimation techniques can be broadly classified under which of the following headings?",
@@ -5061,10 +4992,9 @@
         "A. automated processes",
         "B. decomposition techniques",
         "C. empirical models",
-        "D. regression models",
-        "E. b and c"
+        "D. regression models"
       ],
-      "analysis": "【翻译】\n软件项目估算技术大体上可归为下列哪几类？\nA. 自动化过程\nB. 分解技术\nC. 经验模型\nD. 回归模型\nE. b 和 c\n【解析】\n顶层两大类是分解技术（把项目拆开估规模或功能点）和经验模型（用历史数据拟合公式），故 B、C 对。A 是具体手段，D 是经验模型的一种具体形式，都不是顶层分类。E 把二者合在一起，故选 BC。"
+      "analysis": "【翻译】\n软件项目估算技术大体上可归为下列哪几类？\nA. 自动化过程\nB. 分解技术\nC. 经验模型\nD. 回归模型\n【解析】\n两大顶层类别是分解技术（把项目拆开估规模或功能点）和经验模型（用历史数据拟合公式），故 B、C 对。A 是具体手段，D 是经验模型的一种具体形式，都不属于顶层分类。故选 BC。"
     },
     {
       "topic": "9. The size estimate for a software product to be built must be based on a direct measure like LOC.",
@@ -5082,10 +5012,9 @@
         "A. information domain values",
         "B. project schedule",
         "C. software functions",
-        "D. process activities",
-        "E. a and c"
+        "D. process activities"
       ],
-      "analysis": "【翻译】\n基于问题的估算依赖问题分解，它关注的是\nA. 信息域值\nB. 项目进度\nC. 软件功能\nD. 过程活动\nE. a 和 c\n【解析】\n问题型分解从范围说明里提取信息域值（如输入、输出、查询）和软件功能两类要素来估算，故 A、C 对。B 进度是估算结果，D 过程活动是基于过程的估算才关心的。E 合并二者，故选 AC。"
+      "analysis": "【翻译】\n基于问题的估算依赖问题分解，它关注的是\nA. 信息域值\nB. 项目进度\nC. 软件功能\nD. 过程活动\n【解析】\n基于问题的分解从范围说明里提取信息域值（如输入、输出、查询）和软件功能这两类要素来估算，故 A、C 对。B 进度是估算的结果，D 过程活动只在基于过程的估算中才关心。故选 AC。"
     },
     {
       "topic": "11. LOC-based estimation techniques require problem decomposition based on",
@@ -5116,10 +5045,9 @@
         "A. information domain values",
         "B. project schedule",
         "C. software functions",
-        "D. process activities",
-        "E. c and d"
+        "D. process activities"
       ],
-      "analysis": "【翻译】\n基于过程的估算技术要求按什么进行问题分解\nA. 信息域值\nB. 项目进度\nC. 软件功能\nD. 过程活动\nE. c 和 d\n【解析】\n过程型估算是二维分解：既按软件功能拆（C），又对每个功能按过程活动（沟通、计划、建模、构建等）逐格估工作量（D）。A 是功能点法依据，B 进度是结果。E 合并 C、D，故选 CD。"
+      "analysis": "【翻译】\n基于过程的估算技术要求按什么进行问题分解\nA. 信息域值\nB. 项目进度\nC. 软件功能\nD. 过程活动\n【解析】\n基于过程的估算是二维分解：先按软件功能拆（C），再对每个功能按过程活动（沟通、计划、建模、构建等）逐项估工作量（D），故 C、D 对。A 是功能点法的依据，B 进度是估算结果。故选 CD。"
     },
     {
       "topic": "14. Unlike a LOC or function point each person's \"use-case\" is exactly the same size.",
@@ -5297,10 +5225,9 @@
         "A. computing the overall effort estimate",
         "B. detecting intertask dependencies",
         "C. determining the critical path",
-        "D. specifying the task set to the customer",
-        "E. b and c"
+        "D. specifying the task set to the customer"
       ],
-      "analysis": "【翻译】\n任务（活动）网络是一个有用的工具，用来\nA. 计算总工作量估算\nB. 检测任务间的依赖关系\nC. 确定关键路径\nD. 向客户说明任务集\nE. b 和 c\n【解析】\n任务网络用来表示任务先后和依赖，所以 B 对；有了依赖就能找出关键路径，C 对。A 是估算技术的事，D 不是它的功能。B、C 都对即选项 E，故选 BC。"
+      "analysis": "【翻译】\n任务（活动）网络是一种有用的机制，用于\nA. 计算总体工作量估算\nB. 检测任务间的依赖关系\nC. 确定关键路径\nD. 向客户说明任务集\n【解析】\n任务网络以图的形式描述各任务的先后顺序与相互依赖，B 正是它的核心用途；有了依赖关系，就能识别出耗时最长、决定项目总工期的路径，C 也成立。A 属于工作量估算技术的范畴，D 属于沟通交付，都不是任务网络要解决的问题。故选 BC。"
     },
     {
       "topic": "9. Tasks that lie on the critical path in a task network may be completed in any order as long as the project is on schedule.",
@@ -5318,10 +5245,9 @@
         "A. CPM",
         "B. DRE",
         "C. FP",
-        "D. PERT",
-        "E. a and d"
+        "D. PERT"
       ],
-      "analysis": "【翻译】\n从活动网络中计算关键路径和项目完工时间的两种工具是\nA. CPM\nB. DRE\nC. FP\nD. PERT\nE. a 和 d\n【解析】\nA 是关键路径法(CPM)，D 是计划评审技术(PERT)，二者专门用来求关键路径和完工时间，对应选项 E。B(缺陷消除效率)和 C(功能点)是度量或规模指标，与算关键路径无关，故选 AD。"
+      "analysis": "【翻译】\n从活动网络中计算关键路径和项目完工时间的两种工具是\nA. CPM\nB. DRE\nC. FP\nD. PERT\n【解析】\nA 的关键路径法(CPM)和 D 的计划评审技术(PERT)都是基于活动网络的进度安排方法，能算出关键路径并推算项目完工时间。B 的缺陷消除效率(DRE)衡量的是质量，C 的功能点(FP)衡量的是软件规模，二者都与进度计算无关。故选 AD。"
     },
     {
       "topic": "11. Timeline charts assist project managers in determining what tasks will be conducted at a given point in time.",
@@ -5430,10 +5356,9 @@
         "A. product size",
         "B. development environment",
         "C. staff size",
-        "D. process definition",
-        "E. all of the above"
+        "D. process definition"
       ],
-      "analysis": "【翻译】\n风险条目检查表会从下列哪些类别收集已知和可预测的风险？\nA. 产品规模\nB. 开发环境\nC. 人员规模\nD. 过程定义\nE. 以上全部\n【解析】\n风险识别的来源包括产品规模、开发环境、人员规模和经验、过程定义等，A、B、C、D 都在其中。E 意思虽等价，但本题以具体列举为答案，故选 ABCD。"
+      "analysis": "【翻译】\n风险条目检查表会从下列哪些类别收集已知和可预测的风险？\nA. 产品规模\nB. 开发环境\nC. 人员规模\nD. 过程定义\n【解析】\n风险条目检查表用于发现已知和可预测的风险，其来源涵盖产品规模、开发与部署环境、人员的规模和经验、以及过程定义是否完善。A、B、C、D 正是这些常见的风险来源类别，都应纳入检查。故选 ABCD。"
     },
     {
       "topic": "6. Questions that should be asked to assess the overall project risk include:",
@@ -5442,10 +5367,9 @@
         "A. Have top managers formally committed to support the project?",
         "B. Are end-users committed to the project and proposed system being built?",
         "C. Are requirement fully understood by development team and customers?",
-        "D. Does the proposed budget have time allocated for marketing?",
-        "E. a, b, c"
+        "D. Does the proposed budget have time allocated for marketing?"
       ],
-      "analysis": "【翻译】\n评估项目总体风险时应当问的问题包括：\nA. 高层管理者是否正式承诺支持该项目？\nB. 最终用户是否对项目和要建的系统有承诺？\nC. 开发团队和客户是否充分理解了需求？\nD. 拟定的预算里是否给市场营销留了时间？\nE. a、b、c\n【解析】\n评估总体项目风险要问高层承诺、用户承诺、需求理解等，A、B、C 都对。D 与项目风险评估无关，是干扰项。E 意思等价但以具体列举为答案，故选 ABC。"
+      "analysis": "【翻译】\n评估项目总体风险时应当问的问题包括：\nA. 高层管理者是否正式承诺支持该项目？\nB. 最终用户是否对项目和要建的系统有承诺？\nC. 开发团队和客户是否充分理解了需求？\n【解析】\n评估总体项目风险关注的是影响项目成败的根本因素：高层的正式支持、最终用户的认同、以及需求是否被双方充分理解，A、B、C 都属于此类。D 谈的是预算中给市场营销留时间，与项目风险无关，是干扰项。故选 ABC。"
     },
     {
       "topic": "7. Software risk impact assessment should focus on consequences affecting",
@@ -5496,10 +5420,9 @@
         "A. risk cost",
         "B. risk timing",
         "C. risk scope",
-        "D. risk resources",
-        "E. b and c"
+        "D. risk resources"
       ],
-      "analysis": "【翻译】\n哪些因素会影响风险一旦发生时可能造成的后果？\nA. 风险成本\nB. 风险时机\nC. 风险范围\nD. 风险资源\nE. b 和 c\n【解析】\n风险发生后后果有多严重，由风险的性质、范围和时机决定。对应选项是 B(时机)和 C(范围)。A、D 不是决定后果的因素。E 意思等价但以具体列举为答案，故选 BC。"
+      "analysis": "【翻译】\n哪些因素会影响风险一旦发生时可能造成的后果？\nA. 风险成本\nB. 风险时机\nC. 风险范围\nD. 风险资源\n【解析】\n风险发生后后果的严重程度，主要取决于它影响的范围(scope)以及它出现的时机(timing)，因此 B、C 正确。A 的成本是后果本身的度量、D 的资源也不是决定后果大小的因素，二者都不影响后果的轻重。故选 BC。"
     },
     {
       "topic": "12. The reason for refining risks is to break them into smaller units having different consequences.",
